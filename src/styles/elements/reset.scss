@@ -1,0 +1,36 @@
+:root {
+  --background-color: #E5E5E5;
+  --text-color: #04092A;
+  --font-size: 20px;
+}
+
+body {
+  margin: 0;
+  font-family: 'Golos', 'Arial', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: var(--font-size);
+  line-height: 1.4;
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+.body--overflow-hidden {
+  overflow: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, p {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

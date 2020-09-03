@@ -1,0 +1,104 @@
+.anket {
+  margin-top: -76px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 6px 11px rgba(125, 123, 123, 0.04);
+  border-radius: 4px;
+  padding-bottom: 33px;
+
+  &__head {
+    padding: 0 40px;
+    padding-top: 24px;
+  }
+
+  &__control-panel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 24px;
+
+    &--padding {
+      padding-left: 30px;
+      padding-right: 40px;
+    }
+  }
+
+  &__input {
+    display: none;
+
+    &:checked + .anket__button {
+      background-color: transparent;
+      color: #0050B2;
+      box-shadow: none;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    padding: 4px;
+    background: #F1F5FA;
+    box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.07);
+    border-radius: 8px;
+  }
+
+  &__button {
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-family: 'Golos', 'Arial', sans-serif;
+    font-size: 0.9em;
+    color: #04092A;
+    line-height: 1.33;
+    margin-right: 14px;
+    // width: 109px;
+    height: 46px;
+    transition: all 0.3s ease;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 4px -4px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__amount {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 500;
+
+    &-new,
+    &-open {
+      display: flex;
+      align-items: center;
+      
+      &::before {
+        content: '';
+        border-radius: 50%;
+        margin-right: 8px;
+        display: inline-block;
+      }
+    }
+
+    &-new {
+      margin-right: 31px;
+
+      &::before {
+        width: 8px;
+        height: 8px;
+        background-color: #27AE60;
+      }
+    }
+
+    &-open::before {
+      width: 6px;
+      height: 6px;
+      background-color: #FFFFFF;
+      box-shadow: 0 0 0 1.33px #27AE60;
+    }
+  }
+}

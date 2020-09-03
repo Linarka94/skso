@@ -1,0 +1,125 @@
+.main__link {
+  text-decoration: none;
+  font-weight: 500;
+  color: #0050B2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: calc(33% - 16px);
+  min-height: 272px;
+  background-color: #ffffff;
+  box-shadow: 0px 6px 11px rgba(125, 123, 123, 0.04);
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  position: relative;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 32px;
+  padding-bottom: 40px;
+
+  &:nth-child(n+4) {
+    margin-top: 32px;
+
+    @media (max-width: $mobile-device) {
+      margin-top: 16px;
+    }
+  }
+
+  &-svg path {
+    transition: all 0.3s ease;
+  }
+
+  &-svg {
+    &--icon-rf {
+      width: 64px;
+      height: 64px;
+
+      @media (max-width: $mobile-device) {
+        width: 48px;
+        height: 48px;
+      }
+    }
+    &--icon-finance {
+      width: 55px;
+      height: 64px;
+
+      @media (max-width: $mobile-device) {
+        width: 42px;
+        height: 48px;
+      }
+    }
+    &--icon-gos {
+      width: 79px;
+      height: 48px;
+
+      @media (max-width: $mobile-device) {
+        width: 53px;
+        height: 32px;
+      }
+    }
+    &--icon-into {
+      width: 147px;
+      height: 24px;
+
+      @media (max-width: $mobile-device) {
+        width: 98px;
+        height: 16px;
+      }
+    }
+    &--icon-congress {
+      width: 88px;
+      height: 88px;
+    }
+    &--icon-it-sprf {
+      width: 60px;
+      height: 64px;
+
+      @media (max-width: $mobile-device) {
+        width: 45px;
+        height: 48px;
+      }
+    }
+  }
+
+  &--head {
+    align-self: flex-start;
+
+    @media (max-width: $mobile-device) {
+      max-width: 270px;
+    }
+  }
+
+  &:hover {
+    color: #ffffff;
+    background-color: #FF004C;
+    transform: translate(-1px, -4px);
+
+    & .main__link-svg path {
+      fill: #ffffff;
+    }
+  }
+
+  @media (max-width: $mobile-device) {
+    padding-left: 24px;
+    padding-bottom: 24px;
+    padding-top: 16px;
+    padding-right: 16px;
+    width: 100%;
+    margin-top: 16px;
+    min-height: 224px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  &-wrapper {
+    margin-top: 64px;
+    flex-wrap: wrap;
+
+    @media (max-width: $mobile-device) {
+      margin-top: 40px;
+    }
+  }
+}

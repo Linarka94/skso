@@ -1,0 +1,186 @@
+.footer {
+  margin-top: 64px;
+  background-color: #ffffff;
+  padding-top: 32px;
+  font-variant-numeric: tabular-nums;
+
+  @media (max-width: $mobile-device) {
+    margin-top: 40px;
+    padding-top: 16px;
+  }
+
+  &__border {
+    padding-bottom: 32px;
+    border-bottom: 1px solid #E5E5EB;
+
+    @media (max-width: $mobile-device) {
+      padding-bottom: 16px;
+      padding-left: 8px;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: $mobile-device) {
+      display: none;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: $mobile-device) {
+      &--off-mobile {
+        display: none;
+      }
+    }
+  }
+
+  &__link {
+    font-size: 0.9em;
+    color: #0050B2;
+    text-decoration: none;
+    margin-top: 12px;
+    transition: all 0.3s ease;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:hover {
+      color: #1161C3;
+    }
+
+    &:active {
+      color: #0D6ADC;
+    }
+
+    &--active {
+      color: #76767A;
+    }
+
+    &--number {
+      font-size: 2.2em;
+      font-weight: 500;
+      color: #04092A;
+
+      @media (max-width: $mobile-device) {
+        font-size: 1.5em;
+      }
+    }
+
+    &--mail {
+      margin-top: 20px;
+      font-weight: 500;
+      position: relative;
+
+      &::before {
+        content: '';
+        background-image: url('/img/email.svg');
+        background-repeat: no-repeat;
+        background-position: left;
+        width: 16px;
+        height: 16px;
+        display: block;
+        background-size: cover;
+        position: absolute;
+        top: calc(50% - 6px);
+        left: -20px;
+
+        @media (max-width: $mobile-device) {
+          position: static;
+          display: inline-block;
+          vertical-align: middle;
+          margin-right: 4px;
+        }
+      }
+
+      @media (max-width: $mobile-device) {
+        margin-left: -5px;
+      }
+    }
+  }
+
+  &__description {
+    font-size: 0.7em;
+    margin-top: 4px;
+    position: relative;
+
+    &--icon::before {
+      content: '';
+      background-image: url('/img/clock.svg');
+      background-repeat: no-repeat;
+      background-position: left;
+      width: 12px;
+      height: 12px;
+      display: block;
+      background-size: cover;
+      position: absolute;
+      top: calc(50% - 6px);
+      left: -16px;
+    }
+
+    &--address {
+      margin-top: 23px;
+      font-weight: 800;
+    }
+  }
+
+  &__address {
+    margin-top: 4px;
+    font-style: normal;
+    font-size: 0.9em;
+  }
+
+  &__link-map {
+    color: #0050B2;
+    text-decoration: none;
+    font-size: 0.7em;
+    margin-top: 6px;
+
+    &:hover {
+      color: #1161C3;
+    }
+
+    &:active {
+      color: #0D6ADC;
+    }
+  }
+
+  &__copyright {
+    padding-top: 24px;
+    padding-bottom: 29px;
+
+    @media (max-width: $mobile-device) {
+      padding-top: 16px;
+      padding-bottom: 25px;
+    }
+
+    &-icon {
+      margin-right: 16px;
+    }
+  }
+
+  &__text {
+    font-size: 0.7em;
+    line-height: 1.29;
+
+    &--mt12 {
+      margin-top: 12px;
+    }
+
+    &-wrapper {
+      max-width: 482px;
+      display: flex;
+      flex-direction: column;
+      margin-right: auto;
+
+      @media (max-width: $mobile-device) {
+        width: calc(100% - 40px);
+      }
+    }
+  }
+}

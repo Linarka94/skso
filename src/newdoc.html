@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="/app.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta data-n-head="ssr" name="keywords" content="государство счетная палата Россия Российская Федерация сайт">
+  <meta data-n-head="ssr" data-hid="description" name="description" content="Официальный сайт Счетной палаты Российской Федерации">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Создать документ</title>
+</head>
+<body>
+  @@include('./header.html')
+  <section class="container">
+    <div class="anket">
+      <h1 class="page__title anket__head">
+        Создать документ
+      </h1>
+      <ul class="breadcrumb">
+        <li class="breadcrumb__item"><a href="index.html" class="breadcrumb__link">Портал Счетной палаты</a></li>
+        <li class="breadcrumb__item"><a href="library.html" class="breadcrumb__link">Библиотека</a></li>
+        <li class="breadcrumb__item"><a href="documents.html" class="breadcrumb__link">Документы</a></li>
+        <li class="breadcrumb__item">Создать документ</li>
+      </ul>
+      <div class="page__content page__content--newdoc">
+        <div class="page__share">
+          <p class="page__share-text page__share-text--mt18">
+            Ни разу не скачано
+          </p>
+          <p class="page__share-text page__share-text--mt12">
+            Просмотров нет
+          </p>
+        </div>
+        <form action="#" method="POST" class="newdoc">
+          <div class="newdoc__item">
+            <label class="newdoc__label" for="newdoc-section">
+              Раздел
+            </label>
+            <div class="select-box" id="select1">
+              <div class="select-box__options-container">
+                <div class="select-box__option">
+                  <input type="radio" class="select-box__radio" id="section-materials-km-eam" name="section">
+                  <label for="section-materials-km-eam" class="select-box__label">Материалы КМ и ЭАМ контрольно-счетных органов</label>
+                </div>
+                <div class="select-box__option">
+                  <input type="radio" class="select-box__radio" id="section-control-national-projects" name="section">
+                  <label for="section-control-national-projects" class="select-box__label">Контроль реализации национальных проектов</label>
+                </div>
+                <div class="select-box__option">
+                  <input type="radio" class="select-box__radio" id="section-1" name="section">
+                  <label for="section-1" class="select-box__label">Раздел 1</label>
+                </div>
+                <div class="select-box__option">
+                  <input type="radio" class="select-box__radio" id="section-2" name="section">
+                  <label for="section-2" class="select-box__label">Раздел 2</label>
+                </div>
+                <div class="select-box__option">
+                  <input type="radio" class="select-box__radio" id="section-3" name="section">
+                  <label for="section-3" class="select-box__label">Раздел 3</label>
+                </div>
+                <div class="select-box__option">
+                  <input type="radio" class="select-box__radio" id="section-4" name="section">
+                  <label for="section-4" class="select-box__label">Раздел 4</label>
+                </div>
+                <div class="select-box__option">
+                  <input type="radio" class="select-box__radio" id="section-5" name="section">
+                  <label for="section-5" class="select-box__label">Раздел 5</label>
+                </div>
+            </div>
+            <div class="select-box__selected">
+                Выберите раздел
+              </div>
+            </div>
+          </div>
+          <div class="newdoc__item newdoc__item--mt32">
+            <label class="newdoc__label" for="newdoc-name">
+              Название документа
+            </label>
+            <input type="text" id="newdoc-name" class="newdoc__input" required>
+          </div>
+          <div class="newdoc__extra" id="extra-material-km-eam">
+            <div class="newdoc__item newdoc__item--mt24">
+              <label class="newdoc__label" for="newdoc-event-name">
+                Наименование мероприятия
+              </label>
+              <input type="text" id="newdoc-event-name" class="newdoc__input" required>
+            </div>
+            <div class="newdoc__item newdoc__item--mt20">
+              <label class="newdoc__label" for="newdoc-type">
+                Вид мероприятия
+              </label>
+              <div class="select-box" id="select2">
+                <div class="select-box__options-container">
+                  <div class="select-box__option">
+                    <input type="radio" class="select-box__radio" id="type-1" name="type">
+                    <label for="type-1" class="select-box__label">Вид 1</label>
+                  </div>
+                  <div class="select-box__option">
+                    <input type="radio" class="select-box__radio" id="type-2" name="type">
+                    <label for="type-2" class="select-box__label">Вид 2</label>
+                  </div>
+                  <div class="select-box__option">
+                    <input type="radio" class="select-box__radio" id="type-3" name="type">
+                    <label for="type-3" class="select-box__label">Вид 3</label>
+                  </div>
+                  <div class="select-box__option">
+                    <input type="radio" class="select-box__radio" id="type-4" name="type">
+                    <label for="type-4" class="select-box__label">Вид 4</label>
+                  </div>
+                  <div class="select-box__option">
+                    <input type="radio" class="select-box__radio" id="type-5" name="type">
+                    <label for="type-5" class="select-box__label">Вид 5</label>
+                  </div>
+                </div>
+                <div class="select-box__selected">
+                  Выберите вид
+                </div>
+              </div>
+            </div>
+            <div class="newdoc__item newdoc__item--mt56">
+              <div class="newdoc__date">
+                <div class="newdoc__date-item">
+                  <label class="newdoc__label" for="newdoc-start-date">
+                    Дата начала мероприятия
+                  </label>
+                  <input type="date" name="newdoc-start-date" id="newdoc-start-date" class="newdoc__input newdoc__input--width288" required>
+                </div>
+                <div class="newdoc__date-horizontal-line"></div>
+                <div class="newdoc__date-item">
+                  <label class="newdoc__label" for="newdoc-end-date">
+                    Дата окончания мероприятия
+                  </label>
+                  <input type="date" name="newdoc-end-date" id="newdoc-end-date" class="newdoc__input newdoc__input--width288" placeholder="Выберите дату" required>
+                </div>
+              </div>
+            </div>
+            <div id="extra-control-national" class="newdoc__item newdoc__item--mt52">
+              <label class="newdoc__label">
+                Дополнительный признак
+              </label>
+
+              <div class="select-box" id="select3">
+                <div class="select-box__options-container">
+                  <div class="select-box__option">
+                    <input type="radio" class="select-box__radio" id="national-proj-1" name="national-proj">
+                    <label for="national-proj-1" class="select-box__label">Национальный проект 1</label>
+                  </div>
+                  <div class="select-box__option">
+                    <input type="radio" class="select-box__radio" id="national-proj-2" name="national-proj">
+                    <label for="national-proj-2" class="select-box__label">Национальный проект 2</label>
+                  </div>
+                  <div class="select-box__option">
+                    <input type="radio" class="select-box__radio" id="national-proj-3" name="national-proj">
+                    <label for="national-proj-3" class="select-box__label">Национальный проект 3</label>
+                  </div>
+                  <div class="select-box__option">
+                    <input type="radio" class="select-box__radio" id="national-proj-4" name="national-proj">
+                    <label for="national-proj-4" class="select-box__label">Национальный проект 4</label>
+                  </div>
+                  <div class="select-box__option">
+                    <input type="radio" class="select-box__radio" id="national-proj-5" name="national-proj">
+                    <label for="national-proj-5" class="select-box__label">Национальный проект 5</label>
+                  </div>
+                </div>
+                <div class="select-box__selected">
+                  Национальный проект
+                </div>
+              </div>
+              <div class="select-box" id="select4">
+                <div class="select-box__options-container">
+                  <div class="select-box__option">
+                    <input type="radio" class="select-box__radio" id="federal-proj-1" name="federal-proj">
+                    <label for="federal-proj-1" class="select-box__label">Федеральный проект 1</label>
+                  </div>
+                  <div class="select-box__option">
+                    <input type="radio" class="select-box__radio" id="federal-proj-2" name="federal-proj">
+                    <label for="federal-proj-2" class="select-box__label">Федеральный проект 2</label>
+                  </div>
+                  <div class="select-box__option">
+                    <input type="radio" class="select-box__radio" id="federal-proj-3" name="federal-proj">
+                    <label for="federal-proj-3" class="select-box__label">Федеральный проект 3</label>
+                  </div>
+                  <div class="select-box__option">
+                    <input type="radio" class="select-box__radio" id="federal-proj-4" name="federal-proj">
+                    <label for="federal-proj-4" class="select-box__label">Федеральный проект 4</label>
+                  </div>
+                  <div class="select-box__option">
+                    <input type="radio" class="select-box__radio" id="federal-proj-5" name="federal-proj">
+                    <label for="federal-proj-5" class="select-box__label">Федеральный проект 5</label>
+                  </div>
+                </div>
+                <div class="select-box__selected">
+                  Федеральный проект
+                </div>
+              </div>
+              <div class="select-box" id="select5">
+                <div class="select-box__options-container">
+                  <div class="select-box__option">
+                    <input type="radio" class="select-box__radio" id="regional-proj-1" name="regional-proj">
+                    <label for="regional-proj-1" class="select-box__label">Региональный проект 1</label>
+                  </div>
+                  <div class="select-box__option">
+                    <input type="radio" class="select-box__radio" id="regional-proj-2" name="regional-proj">
+                    <label for="regional-proj-2" class="select-box__label">Региональный проект 2</label>
+                  </div>
+                  <div class="select-box__option">
+                    <input type="radio" class="select-box__radio" id="regional-proj-3" name="regional-proj">
+                    <label for="regional-proj-3" class="select-box__label">Региональный проект 3</label>
+                  </div>
+                  <div class="select-box__option">
+                    <input type="radio" class="select-box__radio" id="regional-proj-4" name="regional-proj">
+                    <label for="regional-proj-4" class="select-box__label">Региональный проект 4</label>
+                  </div>
+                  <div class="select-box__option">
+                    <input type="radio" class="select-box__radio" id="regional-proj-5" name="regional-proj">
+                    <label for="regional-proj-5" class="select-box__label">Региональный проект 5</label>
+                  </div>
+                </div>
+                <div class="select-box__selected">
+                  Региональный проект
+                </div>
+              </div>
+            </div>
+            <div class="newdoc__item newdoc__item--mt32">
+              <input class="newdoc__input-checkbox" id="newdoc-double-control" name="newdoc-double-control" type="checkbox" checked>
+              <label class="newdoc__label-checkbox" for="newdoc-double-control">
+                Продублировать в «Контроль реализации национальных проектов»
+              </label>
+              <input class="newdoc__input-checkbox" id="newdoc-double-material" name="newdoc-double-material" type="checkbox">
+              <label class="newdoc__label-checkbox" for="newdoc-double-material">
+                Продублировать в «Материалы КМ и ЭАМ»
+              </label>
+            </div>
+          </div>
+          
+          <div class="newdoc__item newdoc__item--mt52">
+            <label class="newdoc__label">
+              Теги
+            </label>
+            <div class="select-box" id="select6">
+              <div class="select-box__options-container">
+                <div class="select-box__option">
+                  <input type="checkbox" class="select-box__checkbox" id="format-1" name="format">
+                  <label for="format-1" class="select-box__label select-box__label--tag">Формат 1</label>
+                </div>
+                <div class="select-box__option">
+                  <input type="checkbox" class="select-box__checkbox" id="format-2" name="format">
+                  <label for="format-2" class="select-box__label select-box__label--tag">Формат 2</label>
+                </div>
+                <div class="select-box__option">
+                  <input type="checkbox" class="select-box__checkbox" id="format-3" name="format">
+                  <label for="format-3" class="select-box__label select-box__label--tag">Формат 3</label>
+                </div>
+                <div class="select-box__option">
+                  <input type="checkbox" class="select-box__checkbox" id="format-4" name="format">
+                  <label for="format-4" class="select-box__label select-box__label--tag">Формат 4</label>
+                </div>
+                <div class="select-box__option">
+                  <input type="checkbox" class="select-box__checkbox" id="format-5" name="format">
+                  <label for="format-5" class="select-box__label select-box__label--tag">Формат 5</label>
+                </div>
+              </div>
+              <div class="select-box__selected">
+                Формат информации
+              </div>
+            </div>
+            <div class="select-box" id="select7">
+              <div class="select-box__options-container">
+                <div class="select-box__option">
+                  <input type="checkbox" class="select-box__checkbox" id="content-type-1" name="content-type">
+                  <label for="content-type-1" class="select-box__label select-box__label--tag">Контент 1</label>
+                </div>
+                <div class="select-box__option">
+                  <input type="checkbox" class="select-box__checkbox" id="content-type-2" name="content-type">
+                  <label for="content-type-2" class="select-box__label select-box__label--tag">Контент 2</label>
+                </div>
+                <div class="select-box__option">
+                  <input type="checkbox" class="select-box__checkbox" id="content-type-3" name="content-type">
+                  <label for="content-type-3" class="select-box__label select-box__label--tag">Контент 3</label>
+                </div>
+                <div class="select-box__option">
+                  <input type="checkbox" class="select-box__checkbox" id="content-type-4" name="content-type">
+                  <label for="content-type-4" class="select-box__label select-box__label--tag">Контент 4</label>
+                </div>
+                <div class="select-box__option">
+                  <input type="checkbox" class="select-box__checkbox" id="content-type-5" name="content-type">
+                  <label for="content-type-5" class="select-box__label select-box__label--tag">Контент 5</label>
+                </div>
+              </div>
+              <div class="select-box__selected">
+                Тип контента
+              </div>
+            </div>
+          </div>
+          <div class="newdoc__item newdoc__item--mt44">
+            <label class="newdoc__label" for="newdoc-author-region">
+              Отрасль
+            </label>
+            <div class="select-box" id="select8">
+              <div class="select-box__options-container">
+                <div class="select-box__option">
+                  <input type="radio" class="select-box__radio" id="branch-1" name="branch">
+                  <label for="branch-1" class="select-box__label">Отрасль 1</label>
+                </div>
+                <div class="select-box__option">
+                  <input type="radio" class="select-box__radio" id="branch-2" name="branch">
+                  <label for="branch-2" class="select-box__label">Отрасль 2</label>
+                </div>
+                <div class="select-box__option">
+                  <input type="radio" class="select-box__radio" id="branch-3" name="branch">
+                  <label for="branch-3" class="select-box__label">Отрасль 3</label>
+                </div>
+                <div class="select-box__option">
+                  <input type="radio" class="select-box__radio" id="branch-4" name="branch">
+                  <label for="branch-4" class="select-box__label">Отрасль 4</label>
+                </div>
+                <div class="select-box__option">
+                  <input type="radio" class="select-box__radio" id="branch-5" name="branch">
+                  <label for="branch-5" class="select-box__label">Отрасль 5</label>
+                </div>
+              </div>
+              <div class="select-box__selected">
+                Выберите отрасль
+              </div>
+            </div>
+          </div>
+          <div class="newdoc__item newdoc__item--mt44">
+            <label class="newdoc__label" for="newdoc-author-region">
+              Автор
+            </label>
+            <div class="select-box" id="select9">
+              <div class="select-box__options-container">
+                <div class="select-box__option">
+                  <input type="radio" class="select-box__radio" id="author-region-1" name="author-region">
+                  <label for="author-region-1" class="select-box__label">Регион 1</label>
+                </div>
+                <div class="select-box__option">
+                  <input type="radio" class="select-box__radio" id="author-region-2" name="author-region">
+                  <label for="author-region-2" class="select-box__label">Регион 2</label>
+                </div>
+                <div class="select-box__option">
+                  <input type="radio" class="select-box__radio" id="author-region-3" name="author-region">
+                  <label for="author-region-3" class="select-box__label">Регион 3</label>
+                </div>
+                <div class="select-box__option">
+                  <input type="radio" class="select-box__radio" id="author-region-4" name="author-region">
+                  <label for="author-region-4" class="select-box__label">Регион 4</label>
+                </div>
+                <div class="select-box__option">
+                  <input type="radio" class="select-box__radio" id="author-region-5" name="author-region">
+                  <label for="author-region-5" class="select-box__label">Регион 5</label>
+                </div>
+              </div>
+              <div class="select-box__selected">
+                Выберите регион
+              </div>
+            </div>
+            <div class="select-box" id="select10">
+              <div class="select-box__options-container">
+                <div class="select-box__option">
+                  <input type="radio" class="select-box__radio" id="author-kso-1" name="author-kso">
+                  <label for="author-kso-1" class="select-box__label">КСО 1</label>
+                </div>
+                <div class="select-box__option">
+                  <input type="radio" class="select-box__radio" id="author-kso-2" name="author-kso">
+                  <label for="author-kso-2" class="select-box__label">КСО 2</label>
+                </div>
+                <div class="select-box__option">
+                  <input type="radio" class="select-box__radio" id="author-kso-3" name="author-kso">
+                  <label for="author-kso-3" class="select-box__label">КСО 3</label>
+                </div>
+                <div class="select-box__option">
+                  <input type="radio" class="select-box__radio" id="author-kso-4" name="author-kso">
+                  <label for="author-kso-4" class="select-box__label">КСО 4</label>
+                </div>
+                <div class="select-box__option">
+                  <input type="radio" class="select-box__radio" id="author-kso-5" name="author-kso">
+                  <label for="author-kso-5" class="select-box__label">КСО 5</label>
+                </div>
+              </div>
+              <div class="select-box__selected">
+                Выберите КСО
+              </div>
+            </div>
+            <div class="select-box" id="select11">
+              <div class="select-box__options-container">
+                <div class="select-box__option">
+                  <input type="radio" class="select-box__radio" id="author-name-1" name="author-name">
+                  <label for="author-name-1" class="select-box__label">Автор 1</label>
+                </div>
+                <div class="select-box__option">
+                  <input type="radio" class="select-box__radio" id="author-name-2" name="author-name">
+                  <label for="author-name-2" class="select-box__label">Автор 2</label>
+                </div>
+                <div class="select-box__option">
+                  <input type="radio" class="select-box__radio" id="author-name-3" name="author-name">
+                  <label for="author-name-3" class="select-box__label">Автор 3</label>
+                </div>
+                <div class="select-box__option">
+                  <input type="radio" class="select-box__radio" id="author-name-4" name="author-name">
+                  <label for="author-name-4" class="select-box__label">Автор 4</label>
+                </div>
+                <div class="select-box__option">
+                  <input type="radio" class="select-box__radio" id="author-name-5" name="author-name">
+                  <label for="author-name-5" class="select-box__label">Автор 5</label>
+                </div>
+              </div>
+              <div class="select-box__selected">
+                Выберите автора
+              </div>
+            </div>
+          </div>
+          <div class="newdoc__item newdoc__item--mt56">
+            <input class="newdoc__input-file" type="file" name="newdoc-file" id="newdoc-file" data-multiple-caption="Выбрано {count} файлов" multiple>
+            <label class="newdoc__label-file" for="newdoc-file">
+              <svg class="newdoc__label-file-icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M19.9997 8.16663C16.4925 8.16663 13.5318 10.5228 12.6214 13.7415C12.4388 14.3874 11.8493 14.8333 11.1781 14.8333H10.833C7.5193 14.8333 4.83301 17.5196 4.83301 20.8333C4.83301 24.147 7.5193 26.8333 10.833 26.8333H13.333C14.1614 26.8333 14.833 27.5049 14.833 28.3333C14.833 29.1617 14.1614 29.8333 13.333 29.8333H10.833C5.86245 29.8333 1.83301 25.8039 1.83301 20.8333C1.83301 16.1106 5.47063 12.2375 10.0969 11.863C11.6716 7.93907 15.5102 5.16663 19.9997 5.16663C24.4891 5.16663 28.3277 7.93907 29.9025 11.863C34.5287 12.2375 38.1663 16.1106 38.1663 20.8333C38.1663 25.8039 34.1369 29.8333 29.1663 29.8333H26.6663C25.8379 29.8333 25.1663 29.1617 25.1663 28.3333C25.1663 27.5049 25.8379 26.8333 26.6663 26.8333H29.1663C32.48 26.8333 35.1663 24.147 35.1663 20.8333C35.1663 17.5196 32.48 14.8333 29.1663 14.8333H28.8213C28.1501 14.8333 27.5606 14.3874 27.3779 13.7415C26.4675 10.5228 23.5068 8.16663 19.9997 8.16663Z" fill="#A7A8AB"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M18.9397 14.7727C19.5255 14.1869 20.4752 14.1869 21.061 14.7727L26.8943 20.606C27.4801 21.1918 27.4801 22.1416 26.8943 22.7274C26.3085 23.3132 25.3588 23.3132 24.773 22.7274L21.5003 19.4547V32.5C21.5003 33.3285 20.8288 34 20.0003 34C19.1719 34 18.5003 33.3285 18.5003 32.5V19.4547L15.2277 22.7274C14.6419 23.3132 13.6921 23.3132 13.1063 22.7274C12.5205 22.1416 12.5205 21.1918 13.1063 20.606L18.9397 14.7727Z" fill="#A7A8AB"/>
+              </svg>                
+              <span class="newdoc__label-file-text">Перетащите файлы сюда или нажмите, чтобы выбрать файлы для загрузки</span>
+            </label>
+          </div>
+          <div class="newdoc__item newdoc__item--mt56">
+            <div class="newdoc__date">
+              <div class="newdoc__date-item">
+                <label class="newdoc__label" for="newdoc-statement-date">
+                  Дата утверждения
+                </label>
+                <input type="date" name="newdoc-statement-date" id="newdoc-statement-date" class="newdoc__input newdoc__input--width288" required>
+              </div>
+              <div class="newdoc__date-horizontal-line"></div>
+              <div class="newdoc__date-item">
+                <label class="newdoc__label" for="newdoc-placing-date">
+                  Дата размещения
+                </label>
+                <input type="date" name="newdoc-placing-date" id="newdoc-placing-date" class="newdoc__input newdoc__input--width288" placeholder="Выберите дату" required>
+              </div>
+            </div>
+          </div>
+          <div class="newdoc__item newdoc__item--mt44">
+            <label class="newdoc__label">
+              Видимость
+            </label>
+            <div class="newdoc__input-radio-wrapper">
+              <input type="radio" name="newdoc-private" id="newdoc-public" class="newdoc__input-radio">        
+              <label class="newdoc__label-radio" for="newdoc-public">Опубликован</label>
+              <input type="radio" name="newdoc-private" id="newdoc-draft" class="newdoc__input-radio">
+              <label class="newdoc__label-radio" for="newdoc-draft">Черновик</label>
+              <input type="radio" name="newdoc-private" id="newdoc-hidden" class="newdoc__input-radio">
+              <label class="newdoc__label-radio" for="newdoc-hidden">Скрыт</label>
+            </div>
+          </div>
+          <div class="newdoc__item newdoc__item--mt44">
+            <input class="newdoc__input-checkbox" id="newdoc-actual-version" name="newdoc-actual-version" type="checkbox" checked>
+            <label class="newdoc__label-checkbox" for="newdoc-actual-version">
+              Актуальная версия
+            </label>
+          </div>
+          <div class="newdoc__item newdoc__item--flex-row newdoc__item--mt64">
+            <button type="submit" class="newdoc__button newdoc__button--createdoc">Создать документ</button>
+            <button type="reset" class="newdoc__button newdoc__button--reset">Отменить</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  @@include('./footer.html')
+  <script src="/js/select.js"></script>
+</body>
+</html>
