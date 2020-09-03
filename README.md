@@ -1,6 +1,6 @@
 <h1>Skso</h1>
 
-$ cd pink
+$ cd skso
 $ npm install
 $ gulp build
 
