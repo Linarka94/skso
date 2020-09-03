@@ -8,21 +8,21 @@ let path = {
     html: project_folder + '/',
     css: project_folder + '/',
     js: project_folder + '/js/',
-    img: project_folder + '/img/',
+    img: project_folder + 'img/',
     fonts: project_folder + '/fonts/',
   },
   src: {
     html: source_folder + '/*.html',
     css: source_folder + '/styles/*.scss',
     js: source_folder + '/js/*.js',
-    img: source_folder + '/img/**/*.{jpg,png,svg,gif,jpeg}',
+    img: source_folder + 'img/**/*.{jpg,png,svg,gif,jpeg}',
     fonts: source_folder + '/fonts/**/*.ttf',
   },
   watch: {
     html: source_folder + '/**/*.html',
     css: source_folder + '/styles/**/*.scss',
     js: source_folder + '/js/**/*.js',
-    img: source_folder + '/img/',
+    img: source_folder + 'img/',
   },
   clean: './' + project_folder + '/'
 }
