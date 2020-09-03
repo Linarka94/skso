@@ -11,7 +11,7 @@ jQuery(function(){
 
 		    if(text!==''){
 		    	jQuery.ajax({
-		    		url: '/js/molly.submit.php',
+		    		url: 'js/molly.submit.php',
 		    		type: 'post',
 		    		data: 'text='+text
 		    	});
