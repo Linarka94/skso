@@ -14,7 +14,7 @@
 }
 
 .map {
-  background-color: #FFFFFF;
+  background-color: var(--background-white);
   box-shadow: 0px 6px 11px rgba(125, 123, 123, 0.04);
   border-radius: 4px;
   padding-left: 40px;
@@ -52,10 +52,10 @@
     text-align: center;
     width: 100%;
     height: 56px;
-    border: 1px solid #D9D9DE;
+    border: 1px solid var(--separator-dark);
     border-radius: 6px;
     padding-left: 16px;
-    font-family: 'Golos', 'Arial', sans-serif;
+    font-family: var(--font-family);
     font-size: 0.9em;
   }
 
@@ -85,7 +85,7 @@
       background: none;
       display: flex;
       align-items: center;
-      background-color: #F1F5FA;
+      background-color: var(--background-light);
       padding: 6px;
       border-radius: 50%;
       cursor: pointer;
@@ -134,7 +134,7 @@
     &-contacts {
       margin-top: 20px;
       font-size: 0.7em;
-      color: #76767A;
+      color: var(--tooltip-color);
       display: flex;
       flex-direction: column;
       font-variant-numeric: tabular-nums;
@@ -148,7 +148,7 @@
     }
 
     &-link {
-      color: #0050B2;
+      color: var(--interactive-color);
       font-size: 1.43em;
       text-decoration: none;
       margin-top: 20px;
@@ -172,12 +172,12 @@
       background: none;
       cursor: pointer;
       padding: 17px 0;
-      font-family: 'Golos', 'Arial', sans-serif;
+      font-family: var(--font-family);
       font-size: 0.9em;
       line-height: 1.33;
-      background-color: #0050B2;
+      background-color: var(--interactive-color);
       border-radius: 10px;
-      color: #FFFFFF;
+      color: var(--white-color);
       transition: all 0.3s ease;
       border: 2px solid transparent;
       width: 50%;

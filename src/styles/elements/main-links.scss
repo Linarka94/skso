@@ -1,14 +1,14 @@
 .main__link {
   text-decoration: none;
   font-weight: 500;
-  color: #0050B2;
+  color: var(--interactive-color);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-end;
   width: calc(33% - 16px);
   min-height: 272px;
-  background-color: #ffffff;
+  background-color: var(--background-white);
   box-shadow: 0px 6px 11px rgba(125, 123, 123, 0.04);
   border-radius: 4px;
   transition: all 0.3s ease;
@@ -63,8 +63,8 @@
       height: 64px;
 
       @media (max-width: $mobile-device) {
-        width: 98px;
-        height: 16px;
+        width: 162px;
+        height: 64px;
       }
     }
     &--icon-congress {
@@ -91,12 +91,12 @@
   }
 
   &:hover {
-    color: #ffffff;
-    background-color: #FF004C;
+    color: var(--white-color);
+    background-color: var(--firm-color);
     transform: translate(-1px, -4px);
 
     & .main__link-svg path {
-      fill: #ffffff;
+      fill: var(--background-white);
     }
   }
 

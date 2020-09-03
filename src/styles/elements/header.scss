@@ -1,5 +1,5 @@
 .header {
-  background-color: #04092A;
+  background-color: var(--background-dark);
   background-image: url('/img/sign.svg');
   background-repeat: no-repeat;
   background-position-x: calc(100% - 80px);
@@ -38,8 +38,8 @@
       cursor: pointer;
       border: none;
       background: none;
-      font-family: 'Golos', 'Arial', sans-serif;
-      color: #F1F5FA;
+      font-family: var(--font-family);
+      color: var(--header-text-color);
       font-size: 0.7em;
       line-height: 1.3;
       display: flex;
@@ -107,7 +107,7 @@
     }
 
     &-border {
-      border-bottom: 1px solid #F1F5FA;
+      border-bottom: 1px solid var(--background-light);
       padding-bottom: 12px;
       margin-top: 12px;
 
@@ -124,7 +124,7 @@
         min-width: 12px;
         height: 12px;
         padding: 0 3px;
-        color: #FFFFFF;
+        color: var(--white-color);
         font-weight: 500;
         font-size: 0.6em;
         line-height: 1.5;
@@ -148,10 +148,10 @@
     &-link {
       border: none;
       background: none;
-      font-family: 'Golos', 'Arial', sans-serif;
+      font-family: var(--font-family);
       font-size: 0.7em;
       font-weight: 500;
-      color: #F1F5FA;
+      color: var(--header-text-color);
       text-decoration: none;
       display: flex;
       align-items: center;
@@ -164,7 +164,7 @@
 
       &::after {
         content: '';
-        background-color: #FFFFFF;
+        background-color: var(--background-white);
         background-image: url('/img/icon/line/arrow-down-2.svg');
         background-repeat: no-repeat;
         background-size: contain;
@@ -184,7 +184,7 @@
     &-ripple {
       display: none;
       position: absolute;
-      background-color: #FFFFFF;
+      background-color: var(--background-white);
       border-radius: 4px;
       box-shadow: 0 22px 18px rgba(0, 0, 0, 0.2);
       z-index: 1;
@@ -250,7 +250,7 @@
   }
 
   &__link {
-    color: #F1F5FA;
+    color: var(--header-text-color);
     text-decoration: none;
     font-weight: 500;
     font-size: 0.9em;
@@ -282,7 +282,7 @@
     }
 
     &:hover {
-      color: #A7A8AB;
+      color: var(--frame-color);
     }
 
     &-unread-amount {
@@ -294,7 +294,7 @@
         min-width: 12px;
         height: 12px;
         padding: 0 3px;
-        color: #FFFFFF;
+        color: var(--white-color);
         font-weight: 500;
         font-size: 0.6em;
         line-height: 1.5;
@@ -342,7 +342,7 @@
       }
 
       &:hover > .nav__link {
-        color: #A7A8AB;
+        color: var(--frame-color);
       }
 
       &:hover .nav__link--arrow::after {
@@ -364,7 +364,7 @@
     &-ripple {
       display: none;
       position: absolute;
-      background-color: #FFFFFF;
+      background-color: var(--background-white);
       border-radius: 4px;
       box-shadow: 0 22px 18px rgba(0, 0, 0, 0.2);
       z-index: 1;
@@ -376,7 +376,7 @@
     &--fs {
       font-size: 0.7em;
       font-weight: 400;
-      color: #04092A;
+      color: var(--text-color);
       display: block;
       margin-top: 10px;
       text-decoration: none;
@@ -388,11 +388,11 @@
 
       // TODO correct 
       &:hover {
-        color: #FF004C;
+        color: var(--firm-color);
       }
 
       @media (max-width: $mobile-device) {
-        color: #F1F5FA;
+        color: var(--header-text-color);
         font-size: 0.9em;
         margin-top: 12px;
         margin-right: 6px;
@@ -400,12 +400,12 @@
     }
 
     &--red {
-      color: #FF004C;
+      color: var(--firm-color);
       margin-top: 0;
 
       @media (max-width: $mobile-device) {
         margin-top: 0;
-        color: #FF004C;
+        color: var(--firm-color);
       }
     }
   }
@@ -456,7 +456,7 @@
     background: none;
     padding: 0;
     margin: 0;
-    font-family: 'Golos', 'Arial', sans-serif;
+    font-family: var(--font-family);
     font-size: 1em;
     font-weight: 400;
     cursor: pointer;
@@ -471,14 +471,14 @@
     }
 
     &--light {
-      color: #04092A;
-      background-color: #FFFFFF;
-      border: 1px solid #D9D9DE;
+      color: var(--text-color);
+      background-color: var(--background-white);
+      border: 1px solid var(--separator-dark);
     }
 
     &--dark {
-      color: #FFFFFF;
-      background-color: #04092A;
+      color: var(--white-color);
+      background-color: var(--background-dark);
     }
 
     &--blue {
@@ -488,8 +488,8 @@
 
     &--on-off {
       width: 72px;
-      background-color: #04092A;
-      color: #FFFFFF;
+      background-color: var(--background-dark);
+      color: var(--white-color);
     }
   }
 }
@@ -504,7 +504,7 @@
   top: 0;
   left: 0;
   height: 80px;
-  background-color: #04092A;
+  background-color: var(--background-dark);
   z-index: 100;
   overflow: auto;
   width: 100%;
@@ -529,12 +529,12 @@
       margin-top: 5px;
       border-radius: 29px;
       padding: 13px 16px 13px 40px;
-      font-family: 'Golos', 'Arial', sans-serif;
+      font-family: var(--font-family);
       font-size: 0.7em;
       line-height: 1.29;
       display: flex;
       align-items: center;
-      color: #76767A;
+      color: var(--tooltip-color);
       background-image: url('/img/icon/line/search2.svg');
       background-position: 12px center;
       background-size: 16px 16px;
@@ -595,7 +595,7 @@
     width: 27px;
     height: 3px;
     border-radius: 2px;
-    background-color: #FFFFFF;
+    background-color: var(--background-white);
     position: relative;
     transition: all 0.3s ease;
 
@@ -605,7 +605,7 @@
       content: '';
       width: 17px;
       height: 3px;
-      background-color: #FFFFFF;
+      background-color: var(--background-white);
       border-radius: 2px;
       transition: all 0.3s ease;
     }
@@ -630,7 +630,7 @@
     height: calc(100vh - 80px);
     z-index: 5;
     transition: all 0.5s ease;
-    background-color: #04092A;
+    background-color: var(--background-dark);
   }
 
   &__border {
@@ -643,7 +643,7 @@
     align-items: center;
     text-decoration: none;
     font-weight: 500;
-    color: #F1F5FA;
+    color: var(--header-text-color);
     padding-top: 12px;
     padding-bottom: 12px;
 
@@ -700,8 +700,8 @@
     cursor: pointer;
     border: none;
     background: none;
-    font-family: 'Golos', 'Arial', sans-serif;
-    color: #F1F5FA;
+    font-family: var(--font-family);
+    color: var(--header-text-color);
     font-size: 0.9em;
     line-height: 1.33;
     display: flex;

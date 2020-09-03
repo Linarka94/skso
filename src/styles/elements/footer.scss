@@ -1,6 +1,6 @@
 .footer {
   margin-top: 64px;
-  background-color: #ffffff;
+  background-color: var(--background-white);
   padding-top: 32px;
   font-variant-numeric: tabular-nums;
 
@@ -11,7 +11,7 @@
 
   &__border {
     padding-bottom: 32px;
-    border-bottom: 1px solid #E5E5EB;
+    border-bottom: 1px solid var(--separator-light);
 
     @media (max-width: $mobile-device) {
       padding-bottom: 16px;
@@ -41,7 +41,7 @@
 
   &__link {
     font-size: 0.9em;
-    color: #0050B2;
+    color: var(--interactive-color);
     text-decoration: none;
     margin-top: 12px;
     transition: all 0.3s ease;
@@ -59,13 +59,13 @@
     }
 
     &--active {
-      color: #76767A;
+      color: var(--tooltip-color);
     }
 
     &--number {
       font-size: 2.2em;
       font-weight: 500;
-      color: #04092A;
+      color: var(--text-color);
 
       @media (max-width: $mobile-device) {
         font-size: 1.5em;
@@ -136,7 +136,7 @@
   }
 
   &__link-map {
-    color: #0050B2;
+    color: var(--interactive-color);
     text-decoration: none;
     font-size: 0.7em;
     margin-top: 6px;
