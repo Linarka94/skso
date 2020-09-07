@@ -1,5 +1,3 @@
 <h1>Skso</h1>
 
-$ cd pink
-$ npm install
-$ gulp build
+Demo for <a href="https://github.com/Linarka94/skso/tree/master">github.com/Linarka94/skso</a>
