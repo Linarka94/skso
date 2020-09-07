@@ -11,7 +11,7 @@
 </head>
 <body>
   @@include('./header.html')
-  <section class="container">
+  <section class="container container--padding8">
     <div class="anket">
       <h1 class="page__title anket__head">
         Создать документ
@@ -34,7 +34,7 @@
         <form action="#" method="POST" class="newdoc">
           <div class="newdoc__item">
             <label class="newdoc__label" for="newdoc-section">
-              Раздел
+              Раздел <span class="newdoc__required">*</span>
             </label>
             <div class="select-box" id="select1">
               <div class="select-box__options-container">
@@ -74,20 +74,20 @@
           </div>
           <div class="newdoc__item newdoc__item--mt32">
             <label class="newdoc__label" for="newdoc-name">
-              Название документа
+              Название документа <span class="newdoc__required">*</span>
             </label>
             <input type="text" id="newdoc-name" class="newdoc__input" required>
           </div>
           <div class="newdoc__extra" id="extra-material-km-eam">
             <div class="newdoc__item newdoc__item--mt24">
               <label class="newdoc__label" for="newdoc-event-name">
-                Наименование мероприятия
+                Наименование мероприятия <span class="newdoc__required">*</span>
               </label>
               <input type="text" id="newdoc-event-name" class="newdoc__input" required>
             </div>
             <div class="newdoc__item newdoc__item--mt20">
               <label class="newdoc__label" for="newdoc-type">
-                Вид мероприятия
+                Вид мероприятия <span class="newdoc__required">*</span>
               </label>
               <div class="select-box" id="select2">
                 <div class="select-box__options-container">
@@ -121,14 +121,14 @@
               <div class="newdoc__date">
                 <div class="newdoc__date-item">
                   <label class="newdoc__label" for="newdoc-start-date">
-                    Дата начала мероприятия
+                    Дата начала мероприятия <span class="newdoc__required">*</span>
                   </label>
                   <input type="date" name="newdoc-start-date" id="newdoc-start-date" class="newdoc__input newdoc__input--width288" required>
                 </div>
                 <div class="newdoc__date-horizontal-line"></div>
                 <div class="newdoc__date-item">
                   <label class="newdoc__label" for="newdoc-end-date">
-                    Дата окончания мероприятия
+                    Дата окончания мероприятия <span class="newdoc__required">*</span>
                   </label>
                   <input type="date" name="newdoc-end-date" id="newdoc-end-date" class="newdoc__input newdoc__input--width288" placeholder="Выберите дату" required>
                 </div>
@@ -163,7 +163,7 @@
                   </div>
                 </div>
                 <div class="select-box__selected">
-                  Национальный проект
+                  Национальный проект <span class="newdoc__required">&nbsp;*</span>
                 </div>
               </div>
               <div class="select-box" id="select4">
@@ -190,7 +190,7 @@
                   </div>
                 </div>
                 <div class="select-box__selected">
-                  Федеральный проект
+                  Федеральный проект <span class="newdoc__required">&nbsp;*</span>
                 </div>
               </div>
               <div class="select-box" id="select5">
@@ -227,7 +227,7 @@
                 Продублировать в «Контроль реализации национальных проектов»
               </label>
               <input class="newdoc__input-checkbox" id="newdoc-double-material" name="newdoc-double-material" type="checkbox">
-              <label class="newdoc__label-checkbox" for="newdoc-double-material">
+              <label class="newdoc__label-checkbox newdoc__label-checkbox--mt24" for="newdoc-double-material">
                 Продублировать в «Материалы КМ и ЭАМ»
               </label>
             </div>
@@ -235,7 +235,7 @@
           
           <div class="newdoc__item newdoc__item--mt52">
             <label class="newdoc__label">
-              Теги
+              Теги <span class="newdoc__required">*</span>
             </label>
             <div class="select-box" id="select6">
               <div class="select-box__options-container">
@@ -326,7 +326,7 @@
           </div>
           <div class="newdoc__item newdoc__item--mt44">
             <label class="newdoc__label" for="newdoc-author-region">
-              Автор
+              Автор <span class="newdoc__required">*</span>
             </label>
             <div class="select-box" id="select9">
               <div class="select-box__options-container">
@@ -424,14 +424,14 @@
             <div class="newdoc__date">
               <div class="newdoc__date-item">
                 <label class="newdoc__label" for="newdoc-statement-date">
-                  Дата утверждения
+                  Дата утверждения <span class="newdoc__required">*</span>
                 </label>
                 <input type="date" name="newdoc-statement-date" id="newdoc-statement-date" class="newdoc__input newdoc__input--width288" required>
               </div>
               <div class="newdoc__date-horizontal-line"></div>
               <div class="newdoc__date-item">
                 <label class="newdoc__label" for="newdoc-placing-date">
-                  Дата размещения
+                  Дата размещения <span class="newdoc__required">*</span>
                 </label>
                 <input type="date" name="newdoc-placing-date" id="newdoc-placing-date" class="newdoc__input newdoc__input--width288" placeholder="Выберите дату" required>
               </div>
@@ -439,7 +439,7 @@
           </div>
           <div class="newdoc__item newdoc__item--mt44">
             <label class="newdoc__label">
-              Видимость
+              Видимость <span class="newdoc__required">*</span>
             </label>
             <div class="newdoc__input-radio-wrapper">
               <input type="radio" name="newdoc-private" id="newdoc-public" class="newdoc__input-radio">        

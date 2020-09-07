@@ -1,0 +1,201 @@
+.table {
+  text-align: left;
+  margin: 0 auto;
+  width: calc(100% - 32px);
+  line-height: 1.33;
+  font-size: 0.9em;
+  margin-top: 24px;
+  font-variant-numeric: tabular-nums;
+
+  @media (max-width: $mobile-device) {
+    width: 100%;
+  }
+
+  &--mt32 {
+    margin-top: 32px;
+
+    @media (max-width: $mobile-device) {
+      margin-top: 16px;
+    }
+  }
+
+  &__row {
+    border-bottom: 1px solid var(--separator-light);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+
+    &:not(:first-child) {
+      cursor: pointer;
+
+      &:hover {
+        background-color: #F8F8FF;
+      }
+    }
+
+    &--new {
+      font-weight: 800;
+    }
+
+    @media (max-width: $mobile-device) {
+      display: flex;
+      flex-direction: column;
+      border-bottom: none;
+      border-color: transparent;
+      border-radius: 0;
+      padding-bottom: 20px;
+
+      &-head {
+        display: none;
+      }
+
+      &::before {
+        content: '';
+        width: 100%;
+        height: 1px;
+        background-color: var(--separator-light);
+      }
+    }
+  }
+
+  &__head {
+    font-size: 0.8em;
+    line-height: 1.29;
+    color: var(--tooltip-color);
+    font-weight: 400;
+    padding-bottom: 12px;
+    padding-left: 24px;
+    
+
+    &--width541 {
+      width: 541px;
+    }
+
+    &--width434 {
+      width: 434px;
+    }
+
+    &:last-child {
+      padding-right: 15px;
+    }
+  }
+
+  &__cell {
+    line-height: 1.33;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    position: relative;
+    vertical-align: top;
+
+    &:first-child {
+      border-radius: 8px 0 0 8px;
+
+      @media (max-width: $mobile-device) {
+        border-radius: 0;
+      }
+    }
+
+    &:last-child {
+      border-radius: 0 8px 8px 0;
+
+      @media (max-width: $mobile-device) {
+        border-radius: 0;
+      }
+    }
+
+    &:last-child {
+      padding-right: 15px;
+    }
+
+    @media (max-width: $mobile-device) {
+      padding-right: 24px;
+      padding-bottom: 0;
+      display: flex;
+      flex-direction: column;
+
+      &::before {
+        color: var(--tooltip-color);
+        font-size: 0.7em;
+        line-height: 1.29;
+        margin-bottom: 4px;
+        font-weight: 400;
+      }
+
+      &--theme::before {
+        content: 'Тема';
+      }
+      
+      &--type::before {
+        content: 'Тип';
+      }
+
+      &--status::before {
+        content: 'Статус';
+      }
+
+      &--posted::before {
+        content: 'Размещен';
+      }
+      
+      &--end-time::before {
+        content: 'Окончание';
+      }
+
+      &--name::before {
+        content: 'Название';
+      }
+
+      &--plan-year::before {
+        content: 'Год планирования';
+      }
+
+      &--created::before {
+        content: 'Создано';
+      }
+
+      &--updated::before {
+        content: 'Обновлено';
+      }
+    }
+  }
+
+  &__button {
+    border: none;
+    background: none;
+    text-align: left;
+    padding: 0;
+    padding-left: 2px;
+    cursor: pointer;
+    font-family: var(--font-family);
+    font-size: 1em;
+    line-height: 1.29;
+    display: flex;
+    align-items: center;
+    color: var(--tooltip-color);
+
+    &::before {
+      content: '';
+      width: 18px;
+      height: 18px;
+      background-image: url('/img/icon/line/arrow-sorting.svg');
+      background-repeat: no-repeat;
+      display: inline-block;
+      vertical-align: middle;
+      background-position: center;
+      margin-left: -25%;
+    }
+  }
+
+  &__status {
+    position: relative;
+
+    &-icon {
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      top: 8px;
+      left: -15px;
+
+    }
+  }
+}

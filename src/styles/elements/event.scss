@@ -30,6 +30,10 @@
   &__date {
     font-size: 0.7em;
     color: var(--tooltip-color);
+
+    &--mr34 {
+      margin-right: 34px;
+    }
   }
 
   &__title {
@@ -61,6 +65,10 @@
     &--news {
       max-width: 695px;
       margin-top: 0;
+
+      @media (max-width: $mobile-device) {
+        margin-top: 8px;
+      }
     }
   }
 

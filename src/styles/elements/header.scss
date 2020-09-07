@@ -9,13 +9,18 @@
     min-height: 472px;
 
     @media (max-width: $mobile-device) {
-      min-height: 255px;
+      min-height: 239px;
     }
   }
 
   @media (max-width: $mobile-device) {
-    background-size: contain;
     background-position: right bottom;
+    background-image: url('/img/header-bg-mobile.svg');
+    min-height: auto;
+
+    &--pb63 {
+      padding-bottom: 63px;
+    }
   }
 
   &__border {
@@ -497,13 +502,13 @@
 .burger {
   margin: 0;
   padding: 0 24px;
+  padding-top: 24px;
   display: none;
   justify-content: space-between;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 80px;
+  // position: fixed;
+  // top: 0;
+  // left: 0;
+  height: 104px;
   background-color: var(--background-dark);
   z-index: 100;
   overflow: auto;
@@ -539,6 +544,12 @@
       background-position: 12px center;
       background-size: 16px 16px;
       background-repeat: no-repeat;
+      outline: none;
+      border: 2px solid transparent;
+
+      &:focus {
+        border: 2px solid #9AABF5;
+      }
     }
 
     &-checkbox {
@@ -628,7 +639,7 @@
     overflow: auto;
     width: 100vw;
     height: calc(100vh - 80px);
-    z-index: 5;
+    z-index: 99;
     transition: all 0.5s ease;
     background-color: var(--background-dark);
   }
@@ -666,6 +677,7 @@
     &--fw400 {
       margin-top: 4px;
       font-weight: 400;
+      font-size: 0.9em;
     }
 
     &--label {
@@ -692,6 +704,7 @@
       max-height: 0;
       overflow: hidden;
       transition: all 0.3s ease;
+      padding-left: 12px;
     }
   }
 

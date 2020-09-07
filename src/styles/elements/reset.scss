@@ -22,6 +22,9 @@
   --font-size: 20px;
 }
 
+$mobile-device: 480px;
+$tablet-device: 768px;
+
 body {
   margin: 0;
   font-family: var(--font-family);

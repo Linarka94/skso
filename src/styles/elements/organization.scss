@@ -25,6 +25,22 @@
       outline: none;
       border: 2px solid #9AABF5;
     }
+
+    &--disp-none {
+      display: none;
+
+      @media (max-width: $mobile-device) {
+        display: inline;
+      }
+    }
+
+    @media (max-width: $mobile-device) {
+      margin-top: 20px;
+      font-size: 0.7em;
+      padding: 0 8px;
+      height: 32px;
+      border-radius: 6px;
+    }
   }
 
   &__col-size {
