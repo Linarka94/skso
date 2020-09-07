@@ -67,5 +67,5 @@ sectionMaterialsKmEam.addEventListener('click', () => {
 
 sectionControlNationalProjects.addEventListener('click', () => {
   extraMaterialKmEam.style.display = 'block';
-  extraControlNational.style.display = 'block';
+  extraControlNational.style.display = 'flex';
 })
