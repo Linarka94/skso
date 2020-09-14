@@ -7,6 +7,14 @@
   <meta data-n-head="ssr" name="keywords" content="государство счетная палата Россия Российская Федерация сайт">
   <meta data-n-head="ssr" data-hid="description" name="description" content="Официальный сайт Счетной палаты Российской Федерации">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/portalkso-favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/portalkso-favicon/favicon-16x16.png">
+  <!-- <link rel="manifest" href="/site.webmanifest"> -->
+  <link rel="mask-icon" href="img/portalkso-favicon/safari-pinned-tab.svg" color="#04092a">
+  <meta name="apple-mobile-web-app-title" content="Счетная палата">
+  <meta name="application-name" content="Счетная палата">
+  <meta name="msapplication-TileColor" content="#04092a">
+  <meta name="theme-color" content="#ffffff">
   <title>Для чего данный портал</title>
 </head>
 <body>
@@ -212,7 +220,7 @@
     <a href="" class="nav__link nav__link--ml25 nav__link--not-auth">Библиотека</a>
     <a href="" class="nav__link nav__link--ml20 nav__link--not-auth">Форум</a>
   </nav>
-  <div class="burger">
+  <div class="burger container">
     <a href="index.html" class="nav__logo">
       <svg width="111" height="32" viewBox="0 0 111 32" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M73.3919 22.8706C73.3919 20.2152 74.1727 18.0294 75.7489 16.3261C77.311 14.6223 79.3996 13.7713 82.025 13.7713C83.4778 13.7713 84.7727 14.0428 85.9196 14.5863C87.0554 15.1416 87.9338 15.8081 88.5444 16.6118C89.7533 18.2163 90.351 19.7841 90.351 20.9331H88.7035C88.7035 20.5996 88.5315 19.8456 87.8981 18.7107C87.5794 18.1547 87.1893 17.6231 86.7255 17.1299C86.2617 16.6485 85.6149 16.2286 84.7966 15.8708C83.9656 15.5124 83.038 15.3391 82.025 15.3391C79.8873 15.3391 78.203 16.0441 76.9701 17.4634C75.7237 18.8834 75.1014 20.6859 75.1014 22.8718C75.1014 25.0576 75.7237 26.8596 76.9701 28.2783C78.203 29.6994 79.8873 30.4156 82.025 30.4156C83.038 30.4156 83.9656 30.2293 84.7966 29.8721C85.6149 29.5132 86.2617 29.095 86.7255 28.613C87.1893 28.1311 87.5794 27.6 87.8981 27.0328C88.5315 25.8962 88.7035 25.1557 88.7035 24.8228H90.351C90.351 25.9707 89.7533 27.5385 88.5444 29.1311C87.9338 29.9336 87.0554 30.6007 85.9196 31.1442C84.7727 31.699 83.4778 31.9698 82.025 31.9698C79.3996 31.9698 77.311 31.1188 75.7489 29.4144C74.1727 27.723 73.3919 25.5372 73.3919 22.8706Z" fill="white"/>
@@ -227,7 +235,7 @@
     <label for="burger" id="burgerMenu" class="burger__label">
       <span class="burger__icon"></span>
     </label>
-    <nav class="burger__nav container--padding24">
+    <nav class="burger__nav container container--p24">
       <input type="search" name="search" id="search" class="burger__input-search" placeholder="Найти на сайте" autocomplete="off">
       <label for="search" class="burger__label-search"></label>
       <div class="burger__link-wrapper">
@@ -400,28 +408,32 @@
         <a href="" class="footer__link">Форум</a>
         <a href="" class="footer__link">Карта портала</a>
       </nav>
-      <div class="footer__info footer__info--off-mobile">
+      <div class="footer__info footer__info--flex-grow-1">
         <a href="about.html" class="footer__link">Для чего данный портал</a>
         <a href="" class="footer__link">Регламент функционирования портала</a>
         <a href="" class="footer__link">Подписка на события</a>
         <a href="" class="footer__link">Идеи и предложения</a>
       </div>
       <div class="footer__info">
-        <a href="tel:88001008124" class="footer__link footer__link--number" title="Позвонить">8 800 100 8124</a>
-        <p class="footer__description footer__description--icon">
-          Будни, с 8:00 до 19:00
-        </p>
-        <p class="footer__description">
-          Звонок по России бесплатный
-        </p>
-        <p class="footer__description footer__description--address">
-          Адрес
-        </p>
-        <address class="footer__address">
-          119991, Москва, ул. Зубовская, 2
-        </address>
-        <a href="" class="footer__link-map">Посмотреть на карте</a>
-        <a href="mailto:support@audit.gov.ru" class="footer__link footer__link--mail">support@audit.gov.ru</a>
+        <div class="footer__info-col">
+          <a href="tel:88001008124" class="footer__link footer__link--number"   title="Позвонить">8 800 100 8124</a>
+          <p class="footer__description footer__description--icon">
+            Будни, с 8:00 до 19:00
+          </p>
+          <p class="footer__description">
+            Звонок по России бесплатный
+          </p>
+        </div>
+        <div class="footer__info-col">
+          <p class="footer__description footer__description--address">
+            Адрес
+          </p>
+          <address class="footer__address">
+            119991, Москва, ул. Зубовская, 2
+          </address>
+          <a href="" class="footer__link-map">Посмотреть на карте</a>
+          <a href="mailto:support@audit.gov.ru" class="footer__link footer__link--mail">support@audit.gov.ru</a>
+        </div>
       </div>
     </div>
   </div>
