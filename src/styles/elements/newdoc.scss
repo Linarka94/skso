@@ -1,10 +1,13 @@
 .newdoc {
-  // width: 695px;
   width: 67%;
 
-  @media (max-width: $mobile-device) {
-    margin-top: 28px;
+  @media (max-width: $tablet-device-l) {
+    width: 72%;
+  }
+
+  @media (max-width: $tablet-device-m) {
     width: 100%;
+    margin-top: 28px;
   }
 
   &__item {
@@ -178,10 +181,14 @@
       border: 2px solid #9AABF5;
     }
 
-    &--width288 {
+    &--width {
       width: 288px;
 
-      @media (max-width: $mobile-device) {
+      @media (max-width: $tablet-device-l) {
+        width: 254px;
+      }
+
+      @media (max-width: $tablet-device-m) {
         width: 279px;
       }
     }

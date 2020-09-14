@@ -100,17 +100,33 @@
     }
   }
 
+  @media (max-width: $tablet-device-l) {
+    width: calc(50% - 16px);
+    margin-top: 32px;
+
+    &:first-child,
+    &:nth-child(2) {
+      margin-top: 0;
+    }
+  }
+
+  @media (max-width: $tablet-device-m) {
+    padding: 24px;
+    min-height: 224px;
+  }
+
   @media (max-width: $mobile-device) {
-    padding-left: 24px;
-    padding-bottom: 24px;
     padding-top: 16px;
     padding-right: 16px;
     width: 100%;
     margin-top: 16px;
-    min-height: 224px;
 
     &:first-child {
       margin-top: 0;
+    }
+
+    &:nth-child(2) {
+      margin-top: 16px;
     }
   }
 
@@ -118,7 +134,7 @@
     margin-top: 64px;
     flex-wrap: wrap;
 
-    @media (max-width: $mobile-device) {
+    @media (max-width: $tablet-device-m) {
       margin-top: 40px;
     }
   }

@@ -7,9 +7,10 @@
     color: var(--white-color);
     background-color: #0050B2;
     border-radius: 10px;
-    padding: 0 16px;
-    height: 46px;
+    padding: 17px 16px;
     font-weight: 400;
+    font-size: 0.9em;
+    line-height: 1.33;
     border: 2px solid transparent;
     transition: all 0.3s ease;
 
@@ -26,20 +27,15 @@
       border: 2px solid #9AABF5;
     }
 
-    &--disp-none {
-      display: none;
-
-      @media (max-width: $mobile-device) {
-        display: inline;
-      }
-    }
-
-    @media (max-width: $mobile-device) {
-      margin-top: 20px;
+    @media (max-width: $tablet-device-m) {
       font-size: 0.7em;
       padding: 0 8px;
       height: 32px;
       border-radius: 6px;
+    }
+
+    @media (max-width: $mobile-device) {
+      margin-top: 20px;
     }
   }
 

@@ -19,20 +19,34 @@
     align-items: stretch;
   }
 
+  @media (max-width: $tablet-device-l) {
+    max-width: 1024px;
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+
+  @media (max-width: $tablet-device-m) {
+    max-width: 991px;
+  }
+
   @media (max-width: $mobile-device) {
-    max-width: 375px;
-    padding: 0 16px;
-    
-    &--flex-col {
+    max-width: 767px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  
+  &--flex-col {
+
+    @media (max-width: $tablet-device-m) {
       flex-direction: column;
     }
+  }
 
-    &--padding24 {
-      padding: 0 24px;
-    }
+  &--p24 {
 
-    &--padding8 {
-      padding: 0 8px;
+    @media (max-width: $mobile-device) {
+      padding-left: 24px;
+      padding-right: 24px;
     }
   }
 }
@@ -47,10 +61,20 @@
   font-weight: 400;
   color: var(--header-text-color);
 
-  @media (max-width: $mobile-device) {
+  @media (max-width: $tablet-device-l) {
+    font-size: 1.6em;
+    margin-left: 60px;
+  }
+
+  @media (max-width: $tablet-device-m) {
     font-size: 0.9em;
-    margin-left: 46px;
     margin-top: -24px;
+    margin-left: 38px;
+    max-width: 456px;
+  }
+
+  @media (max-width: $mobile-device) {
+    margin-left: 54px;
   }
 }
 
@@ -59,7 +83,8 @@
   margin-top: 24px;
   list-style: none;
 
-  @media (max-width: $mobile-device) {
+  @media (max-width: $tablet-device-m) {
+    margin-top: 16px;
     padding: 0 24px;
   }
 
@@ -78,8 +103,40 @@
       width: 48px;
       background-color: var(--separator-light);
 
-      @media (max-width: $mobile-device) {
+      @media (max-width: $tablet-device-m) {
         display: none;
+      }
+    }
+
+    @media (max-width: $tablet-device-m) {
+      &:last-child {
+        display: none;
+      }
+
+      &:not(:nth-last-child(2)) {
+        display: none;
+      }
+
+      &:nth-last-child(2) {
+        display: flex;
+        align-items: center;
+      
+        &::before {
+          content: '';
+          display: inline-block;
+          text-align: center;
+          margin: 0;
+          margin-right: 8px;
+          width: 12px;
+          height: 12px;
+          border-radius: 50%;
+          background-image: url('/img/icon/line/Vector.svg');
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: 3px 4px;
+          background-color: var(--background-white);
+          box-shadow: 0px 54px 83px rgba(0, 0, 0, 0.12), 0px 22.5599px 34.6754px rgba(0, 0, 0, 0.0862625), 0px 12.0616px 18.5391px rgba(0, 0, 0, 0.0715329), 0px 6.76164px 10.3929px rgba(0, 0, 0, 0.06), 0px 3.59106px 5.51958px rgba(0, 0, 0, 0.0484671), 0px 1.49432px 2.29682px rgba(0, 0, 0, 0.0337375);
+        }
       }
     }
 

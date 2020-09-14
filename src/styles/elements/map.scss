@@ -1,15 +1,18 @@
 .subjects {
   margin-top: 64px;
 
-  @media (max-width: $mobile-device) {
+  @media (max-width: $tablet-device-m) {
     margin-top: 40px;
   }
 
   &__map {
     margin-top: 24px;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+
+    @media (max-width: $tablet-device-m) {
+      margin-top: 16px;
+    }
   }
 }
 
@@ -25,10 +28,10 @@
   width: 65%;
   transition: all 0.3s ease;
 
-  @media (max-width: $mobile-device) {
-    padding: 19px 24px;
+  @media (max-width: $tablet-device-m) {
     width: 100%;
     margin-right: 0;
+    padding: 19px 24px;
   }
 
   &__choice {
@@ -37,7 +40,11 @@
     flex-direction: column;
     margin-right: 116px;
 
-    @media (max-width: $mobile-device) {
+    @media (max-width: $tablet-device-l) {
+      margin-right: 24px;
+    }
+
+    @media (max-width: $tablet-device-m) {
       margin-right: 0;
     }
   }
@@ -61,7 +68,7 @@
 
   &__wrapper {
 
-    @media (max-width: $mobile-device) {
+    @media (max-width: $tablet-device-m) {
       display: none;
     }
   }
@@ -76,7 +83,7 @@
     flex-direction: column;
     align-items: center;
 
-    @media (max-width: $mobile-device) {
+    @media (max-width: $tablet-device-m) {
       display: none;
     }
 
@@ -112,7 +119,7 @@
     flex-direction: column;
     margin-top: 20px;
 
-    @media (max-width: $mobile-device) {
+    @media (max-width: $tablet-device-m) {
       display: flex;
     }
 
@@ -192,6 +199,14 @@
 
       &:focus {
         border: 2px solid #9AABF5;
+      }
+
+      @media (max-width: $tablet-device-m) {
+        width: 25%;
+      }
+
+      @media (max-width: $mobile-device) {
+        width: 50%;
       }
     }
   }

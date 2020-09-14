@@ -5,7 +5,11 @@
   border-radius: 4px;
   padding-bottom: 33px;
 
-  @media (max-width: $mobile-device) {
+  @media (max-width: $tablet-device-l) {
+    margin-top: -64px;
+  }
+
+  @media (max-width: $tablet-device-m) {
     margin-top: -24px;
     padding-bottom: 4px;
   }
@@ -14,7 +18,7 @@
     padding: 0 40px;
     padding-top: 24px;
 
-    @media (max-width: $mobile-device) {
+    @media (max-width: $tablet-device-m) {
       padding: 16px 24px 0;
     }
   }
@@ -24,15 +28,11 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 24px;
+    padding-left: 40px;
+    padding-right: 40px;
 
-    &--padding {
-      padding-left: 30px;
-      padding-right: 40px;
-
-      @media (max-width: $mobile-device) {
-        padding-right: 0;
-        padding-left: 24px;
-      }
+    @media (max-width: $tablet-device-m) {
+      padding-left: 24px;
     }
 
     @media (max-width: $mobile-device) {
@@ -62,8 +62,7 @@
   }
 
   &__button {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 7px 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -73,8 +72,6 @@
     color: var(--text-color);
     line-height: 1.33;
     margin-right: 14px;
-    // width: 109px;
-    height: 46px;
     transition: all 0.3s ease;
     background-color: var(--background-white);
     box-shadow: 0px 4px 4px -4px rgba(0, 0, 0, 0.25);
@@ -84,15 +81,18 @@
       margin-right: 0;
     }
 
-    @media (max-width: $mobile-device) {
+    @media (max-width: $tablet-device-m) {
       font-size: 0.7em;
       line-height: 1.29;
       padding-left: 8px;
       padding-right: 8px;
       height: 28px;
       margin-right: 8px;
+    }
+    
+    &--disp-none {
 
-      &--disp-none {
+      @media (max-width: $tablet-device-m) {
         display: none;
       }
     }
@@ -104,7 +104,7 @@
     justify-content: space-between;
     font-weight: 500;
 
-    @media (max-width: $mobile-device) {
+    @media (max-width: $tablet-device-m) {
       margin-top: 16px;
       flex-direction: column;
       align-items: flex-start;

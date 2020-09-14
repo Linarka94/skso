@@ -36,7 +36,7 @@
       font-weight: 800;
     }
 
-    @media (max-width: $mobile-device) {
+    @media (max-width: $tablet-device-m) {
       display: flex;
       flex-direction: column;
       border-bottom: none;
@@ -66,12 +66,20 @@
     padding-left: 24px;
     
 
-    &--width541 {
+    &--width-org {
       width: 541px;
+
+      @media (max-width: $tablet-device-l) {
+        width: 365px;
+      }
     }
 
-    &--width434 {
+    &--width-anket {
       width: 434px;
+
+      @media (max-width: $tablet-device-l) {
+        width: 288px;
+      }
     }
 
     &:last-child {
@@ -90,7 +98,7 @@
     &:first-child {
       border-radius: 8px 0 0 8px;
 
-      @media (max-width: $mobile-device) {
+      @media (max-width: $tablet-device-m) {
         border-radius: 0;
       }
     }
@@ -98,7 +106,7 @@
     &:last-child {
       border-radius: 0 8px 8px 0;
 
-      @media (max-width: $mobile-device) {
+      @media (max-width: $tablet-device-m) {
         border-radius: 0;
       }
     }
@@ -107,7 +115,7 @@
       padding-right: 15px;
     }
 
-    @media (max-width: $mobile-device) {
+    @media (max-width: $tablet-device-m) {
       padding-right: 24px;
       padding-bottom: 0;
       display: flex;

@@ -4,7 +4,7 @@
   padding-top: 32px;
   font-variant-numeric: tabular-nums;
 
-  @media (max-width: $mobile-device) {
+  @media (max-width: $tablet-device-m) {
     margin-top: 40px;
     padding-top: 16px;
   }
@@ -13,17 +13,22 @@
     padding-bottom: 32px;
     border-bottom: 1px solid var(--separator-light);
 
-    @media (max-width: $mobile-device) {
+    @media (max-width: $tablet-device-m) {
       padding-bottom: 16px;
-      padding-left: 8px;
+      padding-left: 16px;
     }
   }
 
   &__nav {
     display: flex;
     flex-direction: column;
+    margin-right: 62px;
 
-    @media (max-width: $mobile-device) {
+    @media (max-width: $tablet-device-l) {
+      margin-right: 32px;
+    }
+
+    @media (max-width: $tablet-device-m) {
       display: none;
     }
   }
@@ -32,10 +37,41 @@
     display: flex;
     flex-direction: column;
 
-    @media (max-width: $mobile-device) {
-      &--off-mobile {
+    &--flex-grow-1 {
+      flex-grow: 1;
+
+      @media (max-width: $tablet-device-m) {
         display: none;
       }
+    }
+
+    &-col {
+      display: flex;
+      flex-direction: column;
+
+      &:last-child {
+        margin-top: 23px;
+
+        @media (max-width: $tablet-device-m) {
+          margin-top: 0;
+          margin-left: 156px;
+        }
+
+        @media (max-width: $mobile-device) {
+          margin-left: 0;
+          margin-top: 20px;
+        }
+      }
+    }
+
+    @media (max-width: $tablet-device-m) {
+      flex-direction: row;
+    }
+
+    @media (max-width: $mobile-device) {
+      flex-direction: column;
+      padding-left: 8px;
+      padding-right: 8px;
     }
   }
 
@@ -67,8 +103,8 @@
       font-weight: 500;
       color: var(--text-color);
 
-      @media (max-width: $mobile-device) {
-        font-size: 1.5em;
+      @media (max-width: $tablet-device-m) {
+        font-size: 1.3em;
       }
     }
 
@@ -124,7 +160,6 @@
     }
 
     &--address {
-      margin-top: 23px;
       font-weight: 800;
     }
   }
@@ -154,9 +189,15 @@
     padding-top: 24px;
     padding-bottom: 29px;
 
-    @media (max-width: $mobile-device) {
+    @media (max-width: $tablet-device-m) {
       padding-top: 16px;
-      padding-bottom: 25px;
+      padding-bottom: 24px;
+    }
+
+    @media (max-width: $mobile-device) {
+      padding-bottom: 50px;
+      padding-left: 16px;
+      padding-right: 16px;
     }
 
     &-icon {
@@ -170,6 +211,14 @@
 
     &--mt12 {
       margin-top: 12px;
+
+      @media (max-width: $tablet-device-m) {
+        margin-top: 26px;
+      }
+
+      @media (max-width: $mobile-device) {
+        margin-top: 8px;
+      }
     }
 
     &-wrapper {
@@ -177,6 +226,10 @@
       display: flex;
       flex-direction: column;
       margin-right: auto;
+
+      @media (max-width: $tablet-device-m) {
+        max-width: calc(100% - 60px);
+      }
 
       @media (max-width: $mobile-device) {
         width: calc(100% - 40px);

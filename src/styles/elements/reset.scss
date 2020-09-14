@@ -22,8 +22,9 @@
   --font-size: 20px;
 }
 
-$mobile-device: 480px;
-$tablet-device: 768px;
+$mobile-device: 767px;
+$tablet-device-m: 991px;
+$tablet-device-l: 1024px;
 
 body {
   margin: 0;
@@ -39,6 +40,11 @@ body {
 
 .body--overflow-hidden {
   overflow: hidden;
+
+  & .title { // for burger 
+    color: #04092A;
+    transition: all 0.3s ease;
+  }
 }
 
 *,
