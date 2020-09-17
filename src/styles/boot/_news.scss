@@ -1,0 +1,7 @@
+.main-news__item {
+  @extend .col-12, .col-md-6, .col-xl-4, .mb-3;
+
+  &:last-child {
+    @extend .d-md-none, .d-xl-block;
+  }
+}
