@@ -1,0 +1,57 @@
+$types: (
+        'white': (
+                'color': var(--text-color),
+                'bgColor': var(--background-white)
+        ),
+        'blue': (
+                'color': var(--blue-color),
+                'bgColor': var(--background-blue)
+        ),
+        'black': (
+                'color': var(--white-color),
+                'bgColor': var(--background-dark)
+        )
+);
+
+@each $title, $property in $types {
+  body[data-type=#{$title}] {
+    main {
+      color: map-get($property, 'color') !important;
+      background-color: map-get($property, 'bgColor') !important;
+
+      * {
+        color: map-get($property, 'color') !important;
+        background-color: map-get($property, 'bgColor') !important;
+        background-image: none !important;
+      }
+
+      .disability-border {
+        border: 2px solid map-get($property, 'color') !important;
+      }
+
+      svg {
+        path {
+          fill: map-get($property, 'color') !important;
+        }
+      }
+
+      a {
+        text-decoration: underline !important;
+      }
+    }
+
+    &[data-image=none] main {
+      img {
+        visibility: hidden !important;
+      }
+
+      *, *:before, *:after {
+        background-image: none !important;
+      }
+
+      .img-disability-border {
+        border: 2px solid map-get($property, 'color') !important;
+      }
+    }
+  }
+}

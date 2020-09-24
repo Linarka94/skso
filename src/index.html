@@ -54,7 +54,7 @@
             <p class="disability-panel__title disability-panel__title--mr25">
                 Изображения
             </p>
-            <button id="imgToggle" class="disability-panel__button disability-panel__button--on-off">Вкл</button>
+            <button id="imgToggle" class="disability-panel__button disability-panel__button--on-off">Выкл</button>
         </div>
         <div class="disability-panel__item disability-panel__item--mlauto">
             <p class="disability-panel__title disability-panel__title--mr10">
@@ -69,6 +69,7 @@
         </div>
     </div>
 </div>
+<main>
 <header class="header header--min-height">
     <div class="header__border">
         <nav class="header__navigation container">
@@ -87,7 +88,7 @@
             <div class="header__user">
                 <a href="" class="header__user-link">
             <span class="header__user-unread-amount-all">
-              <img src="/img/auth/background.png" alt="Фотография пользователя" class="header__user-icon">
+              <div class="img-disability-border"><img src="/img/auth/background.png" alt="Фотография пользователя" class="header__user-icon"/></div>
             </span>
                     Ольга Морозова
                 </a>
@@ -307,7 +308,7 @@
             <div class="burger__user">
                 <a href="" class="header__user-link">
             <span class="header__user-unread-amount-all">
-              <img src="/img/auth/background.png" alt="Фотография пользователя" class="header__user-icon">
+              <div class="img-disability-border"><img src="/img/auth/background.png" alt="Фотография пользователя" class="header__user-icon"/></div>
             </span>
                     Ольга Морозова
                 </a>
@@ -354,7 +355,7 @@
     </div>
 </header>
 <article class="event__wrapper container">
-    <div class="event__announcement-wrapper">
+    <div class="event__announcement-wrapper disability-border">
         <div class="event__announcement">
             <div class="event__announcement-item event__announcement-item--separator">
                 <p class="event__date">
@@ -386,7 +387,7 @@
         </div>
         <a href="" class="event__link event__link--max-width150">Все объявления</a>
     </div>
-    <div class="event">
+    <div class="event disability-border">
         <p class="event__date">
             Сегодня, 11:30
         </p>
@@ -397,7 +398,7 @@
             Все события
         </a>
     </div>
-    <div class="event">
+    <div class="event disability-border">
         <p class="event__date">
             Вчера, 11:22
         </p>
@@ -420,7 +421,7 @@
     </div>
     <div class="main-news__list container container--flex container--flex-align-stretch container--flex-col">
         <div class="main-news__item">
-            <img src="/img/news1.jpg" alt="Изображение новости" class="main-news__img">
+            <div class="img-disability-border"><img src="/img/news1.jpg" alt="Изображение новости" class="main-news__img"></div>
             <div class="main-news__text">
                 <p class="event__date">
                     Сегодня, 11:19
@@ -432,7 +433,7 @@
             </div>
         </div>
         <div class="main-news__item">
-            <img src="/img/news2.jpg" alt="Изображение новости" class="main-news__img">
+            <div class="img-disability-border"><img src="/img/news2.jpg" alt="Изображение новости" class="main-news__img"></div>
             <div class="main-news__text">
                 <p class="event__date">
                     2 июля 2020, 11:22
@@ -444,7 +445,7 @@
             </div>
         </div>
         <div class="main-news__item main-news__item--off">
-            <img src="/img/news3.jpg" alt="Изображение новости" class="main-news__img">
+            <div class="img-disability-border"><img src="/img/news3.jpg" alt="Изображение новости" class="main-news__img"></div>
             <div class="main-news__text">
                 <p class="event__date">
                     2 июля 2020, 11:30
@@ -680,7 +681,7 @@
             </div>
         </div>
         <div class="main-news__item main-news__item--map">
-            <img src="/img/news4.jpg" alt="Изображение новости" class="main-news__img">
+            <div class="img-disability-border"><img src="/img/news4.jpg" alt="Изображение новости" class="main-news__img"/></div>
             <div class="main-news__text main-news__text--map">
                 <p class="event__date">
                     29 мая 2020, 14:17
@@ -1040,5 +1041,6 @@
 </section>
 <script src="js/map.js"></script>
 @@include('./footer.html')
+</main>
 </body>
 </html>
