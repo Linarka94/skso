@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c4160da7-70af-4ef3-be15-7cef9c7f5fc8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sshConfigs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/eps.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/ais_eps.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/library.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/profile.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/registr.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles/elements/css-add.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/news.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/news.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/elements/common.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/elements/common.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/elements/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/elements/header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/elements/page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/elements/page.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/elements/reset.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/elements/reset.scss" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1hxYD2aPut5u3PXyEAbRMJGYZqa" />
+  <component name="ProjectLevelVcsManager">
+    <OptionsSetting value="false" id="Update" />
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="js.buildTools.gulp.gulp_package_dir" value="$PROJECT_DIR$/node_modules/gulp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.CSS" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/img/" />
+      <recent name="$PROJECT_DIR$/src/img/icon" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/img" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="js.build_tools.gulp">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c4160da7-70af-4ef3-be15-7cef9c7f5fc8" name="Default Changelist" comment="" />
+      <created>1600954087308</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1600954087308</updated>
+      <workItem from="1600954088544" duration="2831000" />
+      <workItem from="1601028300211" duration="9683000" />
+      <workItem from="1601631538997" duration="33812000" />
+      <workItem from="1604581698413" duration="30431000" />
+      <workItem from="1605300374097" duration="1708000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="320" y="115" key="#Deployment" timestamp="1600954588340">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="320" y="115" key="#Deployment/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1600954588340" />
+    <state x="304" y="102" key="#SSH_Configurations" timestamp="1600954531967">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="304" y="102" key="#SSH_Configurations/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1600954531967" />
+    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605091187449">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900/1440.-104.1920.1080@0.0.1440.900" timestamp="1605091187449" />
+    <state x="456" y="259" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1600954779763">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="456" y="259" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1600954779763" />
+    <state x="100" y="100" width="1240" height="700" key="DiffContextDialog" timestamp="1600954892221">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="100" y="100" width="1240" height="700" key="DiffContextDialog/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1600954892221" />
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1601295625494">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.-104.1920.1080@0.0.1440.900" timestamp="1601295625494" />
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1601028377587" />
+    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1601295625491">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900/1440.-104.1920.1080@0.0.1440.900" timestamp="1601295625491" />
+    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1601028377585" />
+    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1601295625486">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900/1440.-104.1920.1080@0.0.1440.900" timestamp="1601295625486" />
+    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1601028377583" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1601295625492">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900/1440.-104.1920.1080@0.0.1440.900" timestamp="1601295625492" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1601028377586" />
+    <state x="144" y="79" key="MergeDialog" timestamp="1601028349834">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="144" y="79" key="MergeDialog/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1601028349834" />
+    <state x="249" y="85" key="SettingsEditor" timestamp="1600956703348">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="249" y="85" key="SettingsEditor/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1600956703348" />
+    <state x="249" y="85" key="SettingsEditor/0.0.1440.900/1440.23.1920.1057@0.0.1440.900" timestamp="1600956400000" />
+    <state x="531" y="372" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601028314164">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="531" y="372" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1601028314164" />
+    <state x="512" y="290" width="1199" height="900" key="dock-window-1" timestamp="1600956338206">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="512" y="290" width="1199" height="900" key="dock-window-1/0.0.1440.900/1440.23.1920.1057@0.0.1440.900" timestamp="1600956338206" />
+    <state x="546" y="184" width="516" height="525" key="ftp.server.browser" timestamp="1600954579391">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="546" y="184" width="516" height="525" key="ftp.server.browser/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1600954579391" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1604586333384">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900/1440.-104.1920.1080@0.0.1440.900" timestamp="1604586333384" />
+  </component>
+</project>

@@ -6,36 +6,52 @@ const bgBlack = document.getElementById('bgBlack');
 const bgBlue = document.getElementById('bgBlue');
 const imgToggle = document.getElementById('imgToggle');
 
+let size = [16, 20, 24, 28],
+    currentSize = 1;
 
-plusButton.onclick = function() {
-  root.style.setProperty('--font-size', '24px');
+function changeSize(increment = false) {
+    if (increment) {
+        if (currentSize < size.length - 1) {
+            currentSize++;
+        }
+    } else {
+        if (currentSize > 0) {
+            currentSize--;
+        }
+    }
+    root.style.setProperty('--font-size', size[currentSize] + 'px');
 }
 
-minusButton.onclick = function() {
-  root.style.setProperty('--font-size', '20px');
+plusButton.onclick = function () {
+    changeSize(true);
 }
 
-bgWhite.onclick = function() {
-  root.style.setProperty('--background-color', '#FFFFFF');
-  root.style.setProperty('--text-color', '#04092A');
+minusButton.onclick = function () {
+    changeSize();
 }
 
-bgBlack.onclick = function() {
-  root.style.setProperty('--background-color', '#04092A');
-  root.style.setProperty('--text-color', '#FFFFFF');
+bgWhite.onclick = function () {
+    document.body.setAttribute('data-type', 'white');
 }
 
-bgBlue.onclick = function() {
-  root.style.setProperty('--background-color', '#BBD3FB');
-  root.style.setProperty('--text-color', '#364FEE');
+bgBlack.onclick = function () {
+    document.body.setAttribute('data-type', 'black');
 }
 
-imgToggle.onclick = function() {
-  if (imgToggle.textContent == 'Вкл') {
-    imgToggle.textContent = 'Выкл';
-  } else {
+bgBlue.onclick = function () {
+    document.body.setAttribute('data-type', 'blue');
+}
+
+imgToggle.onclick = function () {
+    if (imgToggle.classList.contains('active')) {
+        imgToggle.classList.remove('active');
+        document.body.setAttribute('data-image', '');
+        imgToggle.textContent = 'Выкл';
+        return false;
+    }
+    imgToggle.classList.add('active');
+    document.body.setAttribute('data-image', 'none');
     imgToggle.textContent = 'Вкл';
-  }
 }
 
 const login = document.getElementById('login');
@@ -43,14 +59,14 @@ const registration = document.querySelector('.header__navigation-button--reg');
 const user = document.querySelector('.header__user');
 let linksAuth = document.querySelectorAll('.nav__link--not-auth');
 
-login.onclick = function() {
-  login.classList.toggle('header__navigation-button--not-show');
-  registration.classList.toggle('header__navigation-button--not-show');
-  user.classList.toggle('header__user--show');
+login.onclick = function () {
+    login.classList.toggle('header__navigation-button--not-show');
+    registration.classList.toggle('header__navigation-button--not-show');
+    user.classList.toggle('header__user--show');
 
-  linksAuth.forEach(element => {
-    element.classList.toggle('nav__link--auth');    
-  });
+    linksAuth.forEach(element => {
+        element.classList.toggle('nav__link--auth');
+    });
 }
 
 const disabilityPanel = document.getElementById('disability-panel');
@@ -60,20 +76,23 @@ const images = document.querySelectorAll('img');
 const links = document.querySelectorAll('a');
 
 
-changeVision.onclick = function() {
-  if (disabilityPanel.style.display == 'flex') {
-    disabilityPanel.style.display = 'none';
-    root.style.setProperty('--background-color', '#E5E5E5');
-    root.style.setProperty('--text-color', '#04092A');
-  } else {
+changeVision.onclick = function () {
+    if (disabilityPanel.style.display == 'flex') {
+        clear();
+        return false;
+    }
     disabilityPanel.style.display = 'flex';
-    root.style.setProperty('--background-color', '#FFFFFF');
-    root.style.setProperty('--text-color', '#04092A');
-  }
+    document.body.setAttribute('data-type', 'white');
+
 }
 
-normalVision.onclick = function() {
-  disabilityPanel.style.display = 'none';
-  root.style.setProperty('--background-color', '#E5E5E5');
-  root.style.setProperty('--text-color', '#04092A');
+function clear() {
+    currentSize = 1;
+    disabilityPanel.style.display = 'none';
+    document.body.setAttribute('data-type', '');
+    root.style.setProperty('--font-size', '20px');
+}
+
+normalVision.onclick = function () {
+    clear();
 }

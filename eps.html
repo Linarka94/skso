@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="app.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta data-n-head="ssr" name="keywords" content="государство счетная палата Россия Российская Федерация сайт">
+  <meta data-n-head="ssr" data-hid="description" name="description"
+        content="Официальный сайт Счетной палаты Российской Федерации">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#04092a">
+<meta name="apple-mobile-web-app-title" content="Счетная палата">
+<meta name="application-name" content="Счетная палата">
+<meta name="msapplication-TileColor" content="#04092a">
+<meta name="theme-color" content="#ffffff">
+<meta name="msapplication-config" content="/browserconfig.xml">
+
+  <title>АИС ЕПС</title>
+</head>
+<body>
+<div class="disability-panel" id="disability-panel">
+  <div class="container container--flex">
+    <div class="disability-panel__item">
+      <p class="disability-panel__title">
+        Текст
+      </p>
+      <div class="disability-panel__buttons">
+        <button id="plusButton" class="disability-panel__button disability-panel__button--mr14">
+          <svg width="36" height="36" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 0H17C17.2652 0 17.5196 0.105357 17.7071 0.292893C17.8946 0.48043 18 0.734784 18 1V17C18 17.2652 17.8946 17.5196 17.7071 17.7071C17.5196 17.8946 17.2652 18 17 18H1C0.734784 18 0.48043 17.8946 0.292893 17.7071C0.105357 17.5196 0 17.2652 0 17V1C0 0.734784 0.105357 0.48043 0.292893 0.292893C0.48043 0.105357 0.734784 0 1 0ZM8 8H4V10H8V14H10V10H14V8H10V4H8V8Z" fill="#04092A"/>
+          </svg>              
+        </button>
+        <button id="minusButton" class="disability-panel__button">
+          <svg width="36" height="36" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 0H17C17.2652 0 17.5196 0.105357 17.7071 0.292893C17.8946 0.48043 18 0.734784 18 1V17C18 17.2652 17.8946 17.5196 17.7071 17.7071C17.5196 17.8946 17.2652 18 17 18H1C0.734784 18 0.48043 17.8946 0.292893 17.7071C0.105357 17.5196 0 17.2652 0 17V1C0 0.734784 0.105357 0.48043 0.292893 0.292893C0.48043 0.105357 0.734784 0 1 0ZM4 8V10H14V8H4Z" fill="#04092A"/>
+          </svg>              
+        </button>
+      </div>
+    </div>
+    <div class="disability-panel__item disability-panel__item--border">
+      <p class="disability-panel__title disability-panel__title--mr25">
+        Цвет
+      </p>
+      <div class="disability-panel__buttons">
+        <button id="bgWhite" class="disability-panel__button disability-panel__button--light disability-panel__button--mr14">A</button>
+          <button id="bgBlack" class="disability-panel__button disability-panel__button--dark disability-panel__button--mr14">A</button>
+          <button id="bgBlue" class="disability-panel__button disability-panel__button--blue">A</button>
+      </div>
+    </div>
+    <div class="disability-panel__item disability-panel__item--border">
+      <p class="disability-panel__title disability-panel__title--mr25">
+        Изображения
+      </p>
+      <button id="imgToggle" class="disability-panel__button disability-panel__button--on-off">Вкл</button>
+    </div>
+    <div class="disability-panel__item disability-panel__item--mlauto">
+      <p class="disability-panel__title disability-panel__title--mr10">
+        Обычная версия
+      </p>
+      <button class="disability-panel__button" id="regVision">
+        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M17.882 19.297C16.1232 20.4126 14.0827 21.0033 12 21C6.608 21 2.122 17.12 1.181 12C1.61103 9.67072 2.78263 7.5429 4.521 5.93401L1.392 2.80801L2.807 1.39301L22.606 21.193L21.191 22.607L17.881 19.297H17.882ZM5.935 7.35001C4.576 8.5856 3.62932 10.2088 3.223 12C3.53529 13.3665 4.16226 14.6411 5.054 15.7226C5.94574 16.804 7.07763 17.6624 8.35955 18.2293C9.64148 18.7962 11.038 19.0561 12.4381 18.9881C13.8381 18.9202 15.203 18.5264 16.424 17.838L14.396 15.81C13.5327 16.3538 12.5102 16.5881 11.4962 16.4744C10.4823 16.3608 9.53704 15.9059 8.81557 15.1844C8.0941 14.463 7.63923 13.5177 7.52556 12.5038C7.4119 11.4898 7.64618 10.4673 8.19 9.60401L5.935 7.35001ZM12.914 14.328L9.672 11.086C9.49406 11.5389 9.45219 12.034 9.55151 12.5104C9.65082 12.9867 9.88702 13.4238 10.2311 13.7679C10.5752 14.112 11.0123 14.3482 11.4887 14.4475C11.965 14.5468 12.4601 14.5049 12.913 14.327L12.914 14.328ZM20.807 16.592L19.376 15.162C20.0445 14.2093 20.5204 13.1352 20.777 12C20.5052 10.8097 19.9943 9.68715 19.2751 8.7005C18.556 7.71385 17.6438 6.88373 16.5939 6.26061C15.544 5.63749 14.3783 5.23437 13.1677 5.07577C11.9572 4.91717 10.727 5.00638 9.552 5.33801L7.974 3.76001C9.221 3.27001 10.58 3.00001 12 3.00001C17.392 3.00001 21.878 6.88001 22.819 12C22.5126 13.6657 21.8239 15.2376 20.807 16.592ZM11.723 7.50801C12.3595 7.46867 12.9971 7.56507 13.5935 7.79082C14.19 8.01657 14.7316 8.36652 15.1825 8.81746C15.6335 9.2684 15.9834 9.81003 16.2092 10.4065C16.4349 11.0029 16.5313 11.6405 16.492 12.277L11.722 7.50801H11.723Z" fill="#04092A"/>
+        </svg>  
+      </button>
+    </div>
+  </div>
+</div>
+<header class="header">
+  <div class="header__border">
+    <nav class="header__navigation container">
+      <button class="header__navigation-button header__navigation-button--ov" id="changeVision">
+        Версия для слабовидящих
+      </button>
+      <button class="header__navigation-button header__navigation-button--search">
+        Поиск по сайту
+      </button>
+      <button id="login" class="header__navigation-button header__navigation-button--login">
+        Войти
+      </button>
+      <div class="header__login-overlay" id="login-form">
+        <form class="header__login" action="/" method="get">
+          <div class="header__login-head">
+            <h2 class="header__login-title">
+              Войти
+            </h2>
+            <button type="button" id="login-close" class="header__login-close">
+            </button>
+          </div>
+          <label for="login-field" class="header__login-label">Имя пользователя</label>
+          <input type="email" class="header__login-input" id="login-field" name="login-field" required>
+          <label for="pass-field" class="header__login-label">Пароль</label>
+          <div class="header__login-password">
+            <input type="password" class="header__login-input" id="pass-field" name="pass-field" required>
+            <input type="checkbox" class="header__login-input-eye" id="toggle-eye">
+            <label for="toggle-eye" class="header__login-label-eye">
+            </label>
+          </div>
+          <div class="header__login-item">
+            <button type="submit" class="header__login-link header__login-link--enter">Войти на портал</button>
+            <a href="" class="header__login-link">Забыли пароль?</a>
+          </div>
+        </form>
+      </div>
+
+      <a href="registr.html" class="header__navigation-button header__navigation-button--reg">
+        Зарегистрироваться
+      </a>
+      <div class="header__user">
+        <a href="" class="header__user-link">
+          <span class="header__user-unread-amount-all">
+            <img src="img/auth/background.png" alt="Фотография пользователя" class="header__user-icon">
+          </span>
+          Ольга Морозова
+        </a>
+        <div class="header__user-ripple">
+          <div class="header__user-border">
+            <a href="" class="nav__link nav__link--fs">
+              Заявки
+            </a>
+            <a href="anketi.html" class="nav__link nav__link--fs nav__link-unread-amount nav__link-unread-amount--anket">
+              Анкетирование
+            </a>
+            <a href="" class="nav__link nav__link--fs nav__link-unread-amount nav__link-unread-amount--work-group">
+              Рабочие группы
+            </a>
+            <a href="org.html" class="nav__link nav__link--fs">
+              Организация мероприятий
+            </a>
+          </div>
+          <div class="header__user-border">
+            <a href="" class="nav__link nav__link--fs">
+              Администрирование
+            </a>
+            <a href="" class="nav__link nav__link--fs">
+              Статистика
+            </a>
+            <a href="" class="nav__link nav__link--fs nav__link-unread-amount nav__link-unread-amount--profile">
+              Профиль
+            </a>
+          </div>
+          <a href="" class="header__user-exit">
+            <svg class="header__user-exit-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M9.46277 0.277935C9.69102 0.108111 9.98612 0.0562055 10.2586 0.137955L20.2586 3.13795C20.6393 3.25216 20.9 3.60255 20.9 4V20C20.9 20.3974 20.6393 20.7478 20.2586 20.862L10.2586 23.862C9.98612 23.9438 9.69102 23.8919 9.46277 23.7221C9.23452 23.5522 9.10001 23.2845 9.10001 23V0.999998C9.10001 0.715503 9.23452 0.447759 9.46277 0.277935ZM10.9 2.20963V21.7904L19.1 19.3304V4.66963L10.9 2.20963ZM3.10001 4C3.10001 3.50294 3.50295 3.1 4.00001 3.1H7.00001C7.49706 3.1 7.90001 3.50294 7.90001 4C7.90001 4.49705 7.49706 4.9 7.00001 4.9H4.90001V19.1H7.00001C7.49706 19.1 7.90001 19.5029 7.90001 20C7.90001 20.4971 7.49706 20.9 7.00001 20.9H4.00001C3.50295 20.9 3.10001 20.4971 3.10001 20V4ZM12.1 11.8C12.1 11.3029 12.5029 10.9 13 10.9H13.4C13.8971 10.9 14.3 11.3029 14.3 11.8V12.2C14.3 12.6971 13.8971 13.1 13.4 13.1H13C12.5029 13.1 12.1 12.6971 12.1 12.2V11.8Z" fill="#FF004C"/>
+            </svg>  
+            <span href="" class="nav__link nav__link--fs nav__link--red">
+              Выйти
+            </span>
+          </a>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <nav class="nav container">
+    <a href="index.html" class="nav__logo">
+      <svg class="nav__logo-icon" viewBox="0 0 230 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M152.073 47.1706C152.073 41.6938 153.691 37.1856 156.957 33.6727C160.194 30.1586 164.522 28.4033 169.962 28.4033C172.972 28.4033 175.655 28.9632 178.032 30.0842C180.385 31.2295 182.205 32.6042 183.47 34.2618C185.975 37.571 187.214 40.8046 187.214 43.1746H183.8C183.8 42.4867 183.444 40.9315 182.131 38.5908C181.471 37.4442 180.662 36.3476 179.701 35.3304C178.74 34.3375 177.4 33.4714 175.705 32.7335C173.983 31.9943 172.061 31.6369 169.962 31.6369C165.532 31.6369 162.042 33.0909 159.488 36.0183C156.905 38.9469 155.616 42.6648 155.616 47.173C155.616 51.6812 156.905 55.3978 159.488 58.324C162.042 61.2551 165.532 62.7323 169.962 62.7323C172.061 62.7323 173.983 62.348 175.705 61.6113C177.4 60.8709 178.74 60.0085 179.701 59.0144C180.662 58.0203 181.471 56.925 182.131 55.7552C183.444 53.4108 183.8 51.8837 183.8 51.197H187.214C187.214 53.5645 185.975 56.7981 183.47 60.0829C182.205 61.7382 180.385 63.114 178.032 64.235C175.655 65.3791 172.972 65.9378 169.962 65.9378C164.522 65.9378 160.194 64.1825 156.957 60.6672C153.691 57.1787 152.073 52.6705 152.073 47.1706Z" fill="white"/>
+        <path d="M226.486 47.1706C226.486 42.6636 225.195 38.9457 222.615 36.0159C220.008 33.0897 216.543 31.6345 212.192 31.6345C207.839 31.6345 204.371 33.0884 201.791 36.0159C199.187 38.9445 197.896 42.6623 197.896 47.1706C197.896 51.6788 199.187 55.3954 201.791 58.3216C204.371 61.2527 207.839 62.7298 212.192 62.7298C216.543 62.7298 220.008 61.2527 222.615 58.3216C225.194 55.3954 226.486 51.6776 226.486 47.1706ZM194.355 47.1706C194.355 41.6938 195.972 37.1856 199.21 33.6727C202.424 30.1586 206.75 28.4033 212.192 28.4033C217.603 28.4033 221.933 30.1586 225.169 33.6727C228.382 37.1868 230 41.6938 230 47.1706C230 52.6717 228.382 57.1787 225.169 60.6648C221.933 64.1801 217.603 65.9353 212.192 65.9353C206.75 65.9353 202.424 64.1801 199.21 60.6648C195.972 57.1787 194.355 52.6705 194.355 47.1706Z" fill="white"/>
+        <path d="M37.9372 63.4458V60.0561C48.85 57.9667 57.4531 49.2442 59.4805 38.2029H62.8471C60.7457 51.0921 50.6872 61.282 37.9372 63.4458Z" fill="white"/>
+        <path d="M56.9384 28.1423C54.6189 16.8766 44.7203 8.38341 32.8925 8.38341C19.3475 8.38341 8.32916 19.521 8.32916 33.2104C8.32916 45.1848 16.7613 55.2051 27.9408 57.5288V66C12.1502 63.5763 0 49.8174 0 33.2104C0 14.8969 14.7545 0 32.8925 0C49.3194 0 62.9311 12.2342 65.3633 28.1423H56.9384Z" fill="#FF004C"/>
+        <path d="M77.9377 47.1706C77.9377 41.6938 79.5567 37.1856 82.8203 33.6727C86.0584 30.1586 90.3848 28.4033 95.8261 28.4033C98.8364 28.4033 101.517 28.9632 103.895 30.0842C106.249 31.2295 108.071 32.6042 109.336 34.2618C111.841 37.571 113.079 40.8046 113.079 43.1746H109.664C109.664 42.4867 109.309 40.9315 107.996 38.5908C107.336 37.4442 106.527 36.3476 105.567 35.3304C104.604 34.3375 103.262 33.4714 101.569 32.7335C99.8471 31.9943 97.9262 31.6369 95.8261 31.6369C91.3979 31.6369 87.9065 33.0909 85.3507 36.0183C82.7694 38.9469 81.4812 42.6648 81.4812 47.173C81.4812 51.6812 82.7694 55.3978 85.3507 58.324C87.9065 61.2551 91.3979 62.7323 95.8261 62.7323C97.9262 62.7323 99.8471 62.348 101.569 61.6113C103.262 60.8709 104.604 60.0085 105.567 59.0144C106.527 58.0203 107.336 56.925 107.996 55.7552C109.309 53.4108 109.664 51.8837 109.664 51.197H113.079C113.079 53.5645 111.841 56.7981 109.336 60.0829C108.071 61.7382 106.249 63.114 103.895 64.235C101.517 65.3791 98.8364 65.9378 95.8261 65.9378C90.3848 65.9378 86.0584 64.1825 82.8203 60.6672C79.5567 57.1787 77.9377 52.6705 77.9377 47.1706Z" fill="white"/>
+        <path d="M145.138 65.4279L125.202 47.2206V65.4279H121.786V28.912H125.202V46.7107L143.746 28.912H148.148L129.707 46.9669L149.616 65.4279H145.138Z" fill="white"/>
+      </svg>
+    </a>
+    <a href="" class="nav__link nav__link--mr20">События</a>
+    <div class="nav__link-wrapper">
+      <a href="" class="nav__link nav__link--arrow nav__link--not-auth">Сервисы</a>
+      <div class="nav__link-ripple">
+        <a href="" class="nav__link nav__link--fs">
+          О СКСО
+        </a>
+        <a href="" class="nav__link nav__link--fs">
+          Президиум СКСО
+        </a>
+        <a href="" class="nav__link nav__link--fs">
+          Отделения СКСО в федеральных округах
+        </a>
+        <a href="" class="nav__link nav__link--fs">
+          Комиссии СКСО
+        </a>
+        <a href="" class="nav__link nav__link--fs">
+          Мероприятия СКСО
+        </a>
+      </div>
+    </div>
+    <div class="nav__link-wrapper nav__link-wrapper--ml25">
+      <a href="" class="nav__link nav__link--arrow">КСО</a>
+      <div class="nav__link-ripple">
+        <a href="" class="nav__link nav__link--fs">
+          О СКСО
+        </a>
+        <a href="" class="nav__link nav__link--fs">
+          Президиум СКСО
+        </a>
+        <a href="" class="nav__link nav__link--fs">
+          Отделения СКСО в федеральных округах
+        </a>
+        <a href="" class="nav__link nav__link--fs">
+          Комиссии СКСО
+        </a>
+        <a href="" class="nav__link nav__link--fs">
+          Мероприятия СКСО
+        </a>
+      </div>
+    </div>
+    <div class="nav__link-wrapper nav__link-wrapper--ml25">
+      <a href="" class="nav__link nav__link--arrow">СКСО</a>
+      <div class="nav__link-ripple">
+        <a href="" class="nav__link nav__link--fs">
+          О СКСО
+        </a>
+        <a href="" class="nav__link nav__link--fs">
+          Президиум СКСО
+        </a>
+        <a href="" class="nav__link nav__link--fs">
+          Отделения СКСО в федеральных округах
+        </a>
+        <a href="" class="nav__link nav__link--fs">
+          Комиссии СКСО
+        </a>
+        <a href="" class="nav__link nav__link--fs">
+          Мероприятия СКСО
+        </a>
+      </div>
+    </div>
+    <div class="nav__link-wrapper nav__link-wrapper--ml25">
+      <a href="" class="nav__link nav__link--arrow">Союз МКСО</a>
+      <div class="nav__link-ripple">
+        <a href="" class="nav__link nav__link--fs">
+          О СКСО
+        </a>
+        <a href="" class="nav__link nav__link--fs">
+          Президиум СКСО
+        </a>
+        <a href="" class="nav__link nav__link--fs">
+          Отделения СКСО в федеральных округах
+        </a>
+        <a href="" class="nav__link nav__link--fs">
+          Комиссии СКСО
+        </a>
+        <a href="" class="nav__link nav__link--fs">
+          Мероприятия СКСО
+        </a>
+      </div>
+    </div>
+    <a href="" class="nav__link nav__link--ml25 nav__link--not-auth">Библиотека</a>
+    <a href="" class="nav__link nav__link--ml20 nav__link--not-auth">Форум</a>
+  </nav>
+  <div class="burger container">
+    <a href="index.html" class="nav__logo">
+      <svg width="111" height="32" viewBox="0 0 111 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M73.3919 22.8706C73.3919 20.2152 74.1727 18.0294 75.7489 16.3261C77.311 14.6223 79.3996 13.7713 82.025 13.7713C83.4778 13.7713 84.7727 14.0428 85.9196 14.5863C87.0554 15.1416 87.9338 15.8081 88.5444 16.6118C89.7533 18.2163 90.351 19.7841 90.351 20.9331H88.7035C88.7035 20.5996 88.5315 19.8456 87.8981 18.7107C87.5794 18.1547 87.1893 17.6231 86.7255 17.1299C86.2617 16.6485 85.6149 16.2286 84.7966 15.8708C83.9656 15.5124 83.038 15.3391 82.025 15.3391C79.8873 15.3391 78.203 16.0441 76.9701 17.4634C75.7237 18.8834 75.1014 20.6859 75.1014 22.8718C75.1014 25.0576 75.7237 26.8596 76.9701 28.2783C78.203 29.6994 79.8873 30.4156 82.025 30.4156C83.038 30.4156 83.9656 30.2293 84.7966 29.8721C85.6149 29.5132 86.2617 29.095 86.7255 28.613C87.1893 28.1311 87.5794 27.6 87.8981 27.0328C88.5315 25.8962 88.7035 25.1557 88.7035 24.8228H90.351C90.351 25.9707 89.7533 27.5385 88.5444 29.1311C87.9338 29.9336 87.0554 30.6007 85.9196 31.1442C84.7727 31.699 83.4778 31.9698 82.025 31.9698C79.3996 31.9698 77.311 31.1188 75.7489 29.4144C74.1727 27.723 73.3919 25.5372 73.3919 22.8706Z" fill="white"/>
+      <path d="M109.304 22.8706C109.304 20.6854 108.681 18.8828 107.436 17.4622C106.178 16.0435 104.506 15.3379 102.406 15.3379C100.305 15.3379 98.6314 16.0429 97.3863 17.4622C96.1294 18.8822 95.5065 20.6848 95.5065 22.8706C95.5065 25.0564 96.1294 26.8584 97.3863 28.2771C98.6314 29.6983 100.305 30.4145 102.406 30.4145C104.506 30.4145 106.178 29.6983 107.436 28.2771C108.68 26.8584 109.304 25.0558 109.304 22.8706ZM93.7976 22.8706C93.7976 20.2152 94.5778 18.0294 96.1405 16.3261C97.6916 14.6223 99.7795 13.7713 102.406 13.7713C105.017 13.7713 107.107 14.6223 108.669 16.3261C110.219 18.03 111 20.2152 111 22.8706C111 25.5378 110.219 27.723 108.669 29.4132C107.107 31.1176 105.017 31.9686 102.406 31.9686C99.7795 31.9686 97.6916 31.1176 96.1405 29.4132C94.5778 27.723 93.7976 25.5372 93.7976 22.8706Z" fill="white"/>
+      <path d="M18.3088 30.7616V29.1181C23.5754 28.1051 27.7273 23.876 28.7058 18.5226H30.3305C29.3164 24.7719 24.4621 29.7125 18.3088 30.7616Z" fill="white"/>
+      <path d="M27.479 13.6448C26.3595 8.1826 21.5824 4.06468 15.8742 4.06468C9.33726 4.06468 4.01973 9.46475 4.01973 16.102C4.01973 21.9078 8.08917 26.7661 13.4845 27.8927V32C5.86378 30.8249 0 24.1539 0 16.102C0 7.22276 7.12065 0 15.8742 0C23.802 0 30.3711 5.93173 31.5449 13.6448H27.479Z" fill="#FF004C"/>
+      <path d="M37.6134 22.8706C37.6134 20.2152 38.3948 18.0294 39.9698 16.3261C41.5325 14.6223 43.6205 13.7713 46.2465 13.7713C47.6993 13.7713 48.993 14.0428 50.1405 14.5863C51.2768 15.1416 52.1559 15.8081 52.7665 16.6118C53.9754 18.2163 54.5731 19.7841 54.5731 20.9331H52.925C52.925 20.5996 52.7536 19.8456 52.1196 18.7107C51.8015 18.1547 51.4108 17.6231 50.9476 17.1299C50.4826 16.6485 49.8352 16.2286 49.0181 15.8708C48.187 15.5124 47.2601 15.3391 46.2465 15.3391C44.1094 15.3391 42.4244 16.0441 41.191 17.4634C39.9452 18.8834 39.3235 20.6859 39.3235 22.8718C39.3235 25.0576 39.9452 26.8596 41.191 28.2783C42.4244 29.6994 44.1094 30.4156 46.2465 30.4156C47.2601 30.4156 48.187 30.2293 49.0181 29.8721C49.8352 29.5132 50.4826 29.095 50.9476 28.613C51.4108 28.1311 51.8015 27.6 52.1196 27.0328C52.7536 25.8962 52.925 25.1557 52.925 24.8228H54.5731C54.5731 25.9707 53.9754 27.5385 52.7665 29.1311C52.1559 29.9336 51.2768 30.6007 50.1405 31.1442C48.993 31.699 47.6993 31.9698 46.2465 31.9698C43.6205 31.9698 41.5325 31.1188 39.9698 29.4144C38.3948 27.723 37.6134 25.5372 37.6134 22.8706Z" fill="white"/>
+      <path d="M70.0447 31.7226L60.4238 22.8948V31.7226H58.7751V14.0179H60.4238V22.6476L69.3733 14.0179H71.4975L62.5977 22.7718L72.2057 31.7226H70.0447Z" fill="white"/>
+      </svg>   
+    </a>    
+    <input type="checkbox" name="burger-menu" id="burger" class="burger__input">
+    <label for="burger" id="burgerMenu" class="burger__label">
+      <span class="burger__icon"></span>
+    </label>
+    <nav class="burger__nav container container--p24">
+      <input type="search" name="search" id="search" class="burger__input-search" placeholder="Найти на сайте" autocomplete="off">
+      <label for="search" class="burger__label-search"></label>
+      <div class="burger__link-wrapper">
+        <a href="" class="burger__link burger__border">События</a>
+        <a href="" class="burger__link burger__border">Сервисы</a>
+        <div class="burger__border">
+          <input type="checkbox" name="kso-ripple" id="kso-ripple" class="burger__input-checkbox">
+          <label for="kso-ripple" class="burger__link burger__link--label">КСО</label>
+          <div class="burger__link-ripple">
+            <a href="" class="burger__link burger__link--fw400">О СКСО</a>
+            <a href="" class="burger__link burger__link--fw400">Президиум СКСО</a>
+            <a href="" class="burger__link burger__link--fw400">Отделения СКСО в федеральных округах</a>
+            <a href="" class="burger__link burger__link--fw400">Комиссии СКСО</a>
+            <a href="" class="burger__link burger__link--fw400">Мероприятия СКСО</a>
+          </div>
+        </div>
+        <div class="burger__border">
+          <input type="checkbox" name="skso-ripple" id="skso-ripple" class="burger__input-checkbox">
+          <label for="skso-ripple" class="burger__link burger__link--label">СКСО</label>
+          <div class="burger__link-ripple">
+            <a href="" class="burger__link burger__link--fw400">О СКСО</a>
+            <a href="" class="burger__link burger__link--fw400">Президиум СКСО</a>
+            <a href="" class="burger__link burger__link--fw400">Отделения СКСО в федеральных округах</a>
+            <a href="" class="burger__link burger__link--fw400">Комиссии СКСО</a>
+            <a href="" class="burger__link burger__link--fw400">Мероприятия СКСО</a>
+          </div>
+        </div>
+        <div class="burger__border">
+          <input type="checkbox" name="mkso-ripple" id="mkso-ripple" class="burger__input-checkbox">
+          <label for="mkso-ripple" class="burger__link burger__link--label">Союз МКСО</label>
+          <div class="burger__link-ripple">
+            <a href="" class="burger__link burger__link--fw400">О СКСО</a>
+            <a href="" class="burger__link burger__link--fw400">Президиум СКСО</a>
+            <a href="" class="burger__link burger__link--fw400">Отделения СКСО в федеральных округах</a>
+            <a href="" class="burger__link burger__link--fw400">Комиссии СКСО</a>
+            <a href="" class="burger__link burger__link--fw400">Мероприятия СКСО</a>
+          </div>
+        </div>
+        <a href="" class="burger__link burger__border">Библиотека</a>
+        <a href="" class="burger__link burger__border">Форум</a>
+      </div>
+      <div class="burger__button-wrapper">
+        <button type="button" class="burger__button burger__button--login">Войти</button>
+        <button type="button" class="burger__button">Зарегистрироваться</button>
+      </div>
+      <div class="burger__user">
+        <a href="" class="header__user-link">
+          <span class="header__user-unread-amount-all">
+            <img src="img/auth/background.png" alt="Фотография пользователя" class="header__user-icon">
+          </span>
+          Ольга Морозова
+        </a>
+        <a href="" class="nav__link nav__link--fs">
+          Заявки
+        </a>
+        <a href="anketi.html" class="nav__link nav__link--fs nav__link-unread-amount nav__link-unread-amount--anket">
+          Анкетирование
+        </a>
+        <a href="" class="nav__link nav__link--fs nav__link-unread-amount nav__link-unread-amount--work-group">
+          Рабочие группы
+        </a>
+        <a href="org.html" class="nav__link nav__link--fs">
+          Организация мероприятий
+        </a>
+        <a href="" class="nav__link nav__link--fs">
+          Администрирование
+        </a>
+        <a href="" class="nav__link nav__link--fs">
+          Статистика
+        </a>
+        <a href="" class="nav__link nav__link--fs nav__link-unread-amount nav__link-unread-amount--profile">
+          Профиль
+        </a>
+        <a href="" class="header__user-exit">
+          <svg class="header__user-exit-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.46277 0.277935C9.69102 0.108111 9.98612 0.0562055 10.2586 0.137955L20.2586 3.13795C20.6393 3.25216 20.9 3.60255 20.9 4V20C20.9 20.3974 20.6393 20.7478 20.2586 20.862L10.2586 23.862C9.98612 23.9438 9.69102 23.8919 9.46277 23.7221C9.23452 23.5522 9.10001 23.2845 9.10001 23V0.999998C9.10001 0.715503 9.23452 0.447759 9.46277 0.277935ZM10.9 2.20963V21.7904L19.1 19.3304V4.66963L10.9 2.20963ZM3.10001 4C3.10001 3.50294 3.50295 3.1 4.00001 3.1H7.00001C7.49706 3.1 7.90001 3.50294 7.90001 4C7.90001 4.49705 7.49706 4.9 7.00001 4.9H4.90001V19.1H7.00001C7.49706 19.1 7.90001 19.5029 7.90001 20C7.90001 20.4971 7.49706 20.9 7.00001 20.9H4.00001C3.50295 20.9 3.10001 20.4971 3.10001 20V4ZM12.1 11.8C12.1 11.3029 12.5029 10.9 13 10.9H13.4C13.8971 10.9 14.3 11.3029 14.3 11.8V12.2C14.3 12.6971 13.8971 13.1 13.4 13.1H13C12.5029 13.1 12.1 12.6971 12.1 12.2V11.8Z" fill="#FF004C"/>
+          </svg>  
+          <span href="" class="nav__link nav__link--fs nav__link--red">
+            Выйти
+          </span>
+        </a>
+      </div>
+    </nav>
+  </div>
+</header>
+<section class="container">
+  <div class="page">
+    <ul class="breadcrumb">
+      <li class="breadcrumb__item"><a href="" class="breadcrumb__link">Сервисы</a></li>
+      <li class="breadcrumb__item">АИС ЕПС</li>
+    </ul>
+    <div class="page__head">
+      <h1 class="page__title">
+        АИС ЕПС
+      </h1>
+    </div>
+    <div class="page__content">
+      <div class="page__menu">
+        <a href="" class="page__menu-link">Видеоконференции</a>
+        <a href="" class="page__menu-link">Обучение</a>
+        <a href="" class="page__menu-link page__menu-link--active">АИС ЕПС</a>
+        <a href="" class="page__menu-link">Сервисы Счетной палаты
+          для удаленного мониторинга
+          и анализа</a>
+        <button class="page__print-version">
+          <svg class="page__print-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M6 19H3C2.73478 19 2.48043 18.8946 2.29289 18.7071C2.10536 18.5196 2 18.2652 2 18V8C2 7.73478 2.10536 7.48043 2.29289 7.29289C2.48043 7.10536 2.73478 7 3 7H6V3C6 2.73478 6.10536 2.48043 6.29289 2.29289C6.48043 2.10536 6.73478 2 7 2H17C17.2652 2 17.5196 2.10536 17.7071 2.29289C17.8946 2.48043 18 2.73478 18 3V7H21C21.2652 7 21.5196 7.10536 21.7071 7.29289C21.8946 7.48043 22 7.73478 22 8V18C22 18.2652 21.8946 18.5196 21.7071 18.7071C21.5196 18.8946 21.2652 19 21 19H18V21C18 21.2652 17.8946 21.5196 17.7071 21.7071C17.5196 21.8946 17.2652 22 17 22H7C6.73478 22 6.48043 21.8946 6.29289 21.7071C6.10536 21.5196 6 21.2652 6 21V19ZM6 17V16C6 15.7348 6.10536 15.4804 6.29289 15.2929C6.48043 15.1054 6.73478 15 7 15H17C17.2652 15 17.5196 15.1054 17.7071 15.2929C17.8946 15.4804 18 15.7348 18 16V17H20V9H4V17H6ZM8 4V7H16V4H8ZM8 17V20H16V17H8ZM5 10H8V12H5V10Z"
+              fill="#0050B2"/>
+          </svg>
+          Версия для печати
+        </button>
+      </div>
+      <div class="page__wrap">
+        <h3 class="page__data-head">
+          Автоматизированная информационная система «Единая проектная среда»
+        </h3>
+        <p class="page__data">
+          Подключение организаций (ГРБС и субъектов Российской Федерации)
+          к модернизированной системе АИС ЕПС.
+        </p>
+        <div class="page__list">
+          <div class="page__list-item">
+            <h4 class="page__list-item-head">
+              Направить письмо-соглашение
+            </h4>
+            <p class="page__data">
+              Для подключения к модернизированной автоматизированной информационной системе «Единая проектная среда»,
+              участнику информационного взаимодействия необходимо направить в Счетную палату Российской Федерации письмо
+              — соглашение с приложением заверенной копии организационно-распорядительного документа
+              о назначении ответственных сотрудников, уполномоченных от лица организации размещать и подписывать
+              усиленной квалифицированной электронной подписью электронные документы в АИС ЕПС и заявку
+              на регистрацию.
+            </p>
+            <div class="page__list-item-docs">
+              <a href="" class="page__list-item-link" target="_blank">Письмо-соглашение</a>
+              <a href="" class="page__list-item-link" target="_blank">Шаблон организационно-распорядительного
+                документа</a>
+              <a href="" class="page__list-item-link" target="_blank">Заявка на регистрацию в АИС ЕПС</a>
+            </div>
+          </div>
+          <div class="page__list-item">
+            <h4 class="page__list-item-head">
+              Направить письмо-соглашение
+            </h4>
+            <p class="page__data">
+              Для подключения к модернизированной автоматизированной информационной системе «Единая проектная среда»,
+              участнику информационного взаимодействия необходимо направить в Счетную палату Российской Федерации письмо
+              — соглашение с приложением заверенной копии организационно-распорядительного документа
+              о назначении ответственных сотрудников, уполномоченных от лица организации размещать и подписывать
+              усиленной квалифицированной электронной подписью электронные документы в АИС ЕПС и заявку
+              на регистрацию.
+            </p>
+            <div class="page__list-item-docs">
+              <a href="" class="page__list-item-link" target="_blank">Инструкция по настройке автоматизированного
+                рабочего места</a>
+            </div>
+          </div>
+        </div>
+        <img src="img/ais_eps.jpg" alt="Схема АИС ЕПС" class="page__list-item-img">
+        <p class="page__data">
+          По всем вопросам по работе и подключению к АИС ЕПС обращайтесь
+          по адресу <a href="mailto:support@audit.gov.ru" class="page__list-item-mail">support@audit.gov.ru</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="page__apps container">
+  <h2 class="page__subtitle">
+    Приложенные документы
+  </h2>
+  <div class="page page--margin-top">
+    <div class="page__apps-item">
+      <img src="img/icon/fill/file-word.svg" alt="Иконка документа" class="page__apps-icon">
+      <a href="" class="page__apps-link" target="_blank">
+        Информация о регистрации и размещении информации в ГИС ЕСГФК контрольно-счетными органами (КСО) субъектов
+        Российской Федерации и муниципальных образований по состоянию на 1 августа 2020 года (1.24)
+      </a>
+    </div>
+    <div class="page__apps-item">
+      <img src="img/icon/fill/file-word.svg" alt="Иконка документа" class="page__apps-icon">
+      <a href="" class="page__apps-link" target="_blank">
+        Информация о регистрации и размещении информации в ГИС ЕСГФК контрольно-счетными органами (КСО) субъектов
+        Российской Федерации по состоянию на 1 июля 2020 года (0.68)
+      </a>
+    </div>
+    <div class="page__apps-item">
+      <img src="img/icon/fill/file-word.svg" alt="Иконка документа" class="page__apps-icon">
+      <a href="" class="page__apps-link" target="_blank">
+        Информация о регистрации и размещении информации в ГИС ЕСГФК контрольно-счетными органами (КСО) субъектов
+        Российской Федерации по состоянию на 1 июня 2020 года (0.69)
+      </a>
+    </div>
+    <div class="page__apps-item">
+      <img src="img/icon/fill/file-word.svg" alt="Иконка документа" class="page__apps-icon">
+      <a href="" class="page__apps-link" target="_blank">
+        Информация о регистрации и размещении информации в ГИС ЕСГФК контрольно-счетными органами (КСО) субъектов
+        Российской Федерации по состоянию на 1 мая 2020 года (0.67)
+      </a>
+    </div>
+    <div class="page__apps-item">
+      <img src="img/icon/fill/file-word.svg" alt="Иконка документа" class="page__apps-icon">
+      <a href="" class="page__apps-link" target="_blank">
+        Информация о регистрации и размещении информации в ГИС ЕСГФК контрольно-счетными органами (КСО) субъектов
+        Российской Федерации и муниципальных образований по состоянию на 1 апреля 2020 года (1.2)
+      </a>
+    </div>
+    <div class="page__apps-item">
+      <img src="img/icon/fill/file-word.svg" alt="Иконка документа" class="page__apps-icon">
+      <a href="" class="page__apps-link" target="_blank">
+        Информация о регистрации и размещении информации в ГИС ЕСГФК контрольно-счетными органами (КСО) субъектов
+        Российской Федерации по состоянию на 1 марта 2020 года (0.53)
+      </a>
+    </div>
+    <div class="page__apps-item">
+      <img src="img/icon/fill/file-word.svg" alt="Иконка документа" class="page__apps-icon">
+      <a href="" class="page__apps-link" target="_blank">
+        Информация о регистрации и размещении информации в ГИС ЕСГФК контрольно-счетными органами (КСО) субъектов
+        Российской Федерации по состоянию на 1 февраля 2020 года (0.58)
+      </a>
+    </div>
+    <div class="page__apps-item">
+      <img src="img/icon/fill/file-word.svg" alt="Иконка документа" class="page__apps-icon">
+      <a href="" class="page__apps-link" target="_blank">
+        Информация о регистрации и размещении информации в ГИС ЕСГФК контрольно-счетными органами (КСО) субъектов
+        Российской Федерации и муниципальных образований по состоянию на 1 января 2020 года (информация дополнена по
+        МКСО) (1.09)
+      </a>
+    </div>
+    <div class="page__apps-item">
+      <img src="img/icon/fill/file-word.svg" alt="Иконка документа" class="page__apps-icon">
+      <a href="" class="page__apps-link" target="_blank">
+        Информация о регистрации и размещении информации в ГИС ЕСГФК контрольно-счетными органами (КСО) субъектов
+        Российской Федерации по состоянию на 1 декабря 2019 года (0.59)
+      </a>
+    </div>
+  </div>
+</section>
+<footer class="footer">
+  <div class="footer__border">
+    <div class="container container--flex container--flex-align-flex-start">
+      <nav class="footer__nav">
+        <a href="" class="footer__link">События</a>
+        <a href="" class="footer__link">Сервисы</a>
+        <a href="" class="footer__link">КСО</a>
+        <a href="" class="footer__link">СКСО</a>
+        <a href="" class="footer__link">Союз МКСО</a>
+        <a href="" class="footer__link">Форум</a>
+        <a href="" class="footer__link">Карта портала</a>
+      </nav>
+      <div class="footer__info footer__info--flex-grow-1">
+        <a href="about.html" class="footer__link">Для чего данный портал</a>
+        <a href="" class="footer__link">Регламент функционирования портала</a>
+        <a href="" class="footer__link">Подписка на события</a>
+        <a href="" class="footer__link">Идеи и предложения</a>
+      </div>
+      <div class="footer__info">
+        <div class="footer__info-col">
+          <a href="tel:88001008124" class="footer__link footer__link--number"   title="Позвонить">8 800 100 8124</a>
+          <p class="footer__description footer__description--icon">
+            Будни, с 8:00 до 19:00
+          </p>
+          <p class="footer__description">
+            Звонок по России бесплатный
+          </p>
+        </div>
+        <div class="footer__info-col">
+          <p class="footer__description footer__description--address">
+            Адрес
+          </p>
+          <address class="footer__address">
+            119991, Москва, ул. Зубовская, 2
+          </address>
+          <a href="" class="footer__link-map">Посмотреть на карте</a>
+          <a href="mailto:support@audit.gov.ru" class="footer__link footer__link--mail">support@audit.gov.ru</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer__copyright container container--flex container--flex-align-flex-start">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="footer__copyright-icon">
+      <path d="M20.7952 10.2338C19.9481 6.13683 16.333 3.04845 12.0133 3.04845C7.06599 3.04845 3.04193 7.09843 3.04193 12.0763C3.04193 16.4305 6.1215 20.0742 10.2049 20.9196V24C4.43787 23.1187 0 18.1151 0 12.0763C0 5.41696 5.38856 0 12.0133 0C18.0126 0 22.9838 4.44916 23.8721 10.2338H20.7952Z" fill="#FF004C"/>
+      <path d="M13.8562 23.0714V21.8388C17.8417 21.079 20.9837 17.9077 21.7237 13.8923H22.9532C22.1858 18.5792 18.5123 22.2841 13.8562 23.0714Z" fill="#04092A"/>
+    </svg>
+    <div class="footer__text-wrapper">
+      <p class="footer__text">
+        Все права защищены. При использовании материалов, размещeнных на сайте, ссылка на источник обязательна.
+      </p>
+      <p class="footer__text footer__text--mt12">
+        © 2020 Счетная палата Российской Федерации
+      </p>
+    </div>
+  </div>
+</footer>
+</main>
+<script src="js/login.min.js"></script>
+<script src="js/script.min.js"></script>
+
+</body>
+</html>
