@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="/app.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta data-n-head="ssr" name="keywords" content="государство счетная палата Россия Российская Федерация сайт">
+  <meta data-n-head="ssr" data-hid="description" name="description"
+        content="Официальный сайт Счетной палаты Российской Федерации">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  @@include('./favicon.html')
+  <title>Для чего данный портал</title>
+</head>
+<body>
+@@include('./header.html')
+<div class="page container">
+  <h1 class="page__title">
+    Регистрация
+  </h1>
+  <div class="page__content">
+    <div class="page__menu">
+      <p class="page__menu-description">
+        Регистрация возможна только для сотрудников контрольно-счетных органов Российский Федерации.
+      </p>
+      <p class="page__menu-description">
+        После рассмотрения заявки на указанную вами электронную почту будет выслано письмо с данными для входа в личный
+        кабинет.
+      </p>
+      <p class="page__menu-description">
+        Все поля обязательны для заполнения.
+      </p>
+    </div>
+    <div class="page__wrap">
+      <form action="/" class="registr__form" method="get">
+        <label class="page__data-label">
+          Субъект РФ
+        </label>
+        <select name="region" id="region" class="page__data-select">
+          <option value="1">RT</option>
+          <option value="2">RW</option>
+          <option value="3">RE</option>
+          <option value="4">RR</option>
+        </select>
+        <span class="page__menu-description">
+          Для сотрудников Счетной палаты Российской Федерации указывается «Счетная палата Российской Федерации»
+        </span>
+        <label class="page__data-label" for="city">
+          Город
+        </label>
+        <input type="text" id="city" name="city" class="newdoc__input" required>
+        <label class="page__data-label" for="kso">
+          КСО
+        </label>
+        <select name="region" id="kso" class="page__data-select">
+          <option value="1">RT</option>
+          <option value="2">RW</option>
+          <option value="3">RE</option>
+          <option value="4">RR</option>
+        </select>
+        <span class="page__menu-description">Для сотрудников Счетной палаты Российской Федерации указывается структурное
+          подразделение</span>
+        <label class="page__data-label page__data-label--mt56" for="input-login">
+          Логин
+        </label>
+        <input type="text" id="input-login" name="input-login" class="newdoc__input registr__form-input" required>
+        <label class="page__data-label" for="input-pass">
+          Пароль
+        </label>
+        <input type="password" id="input-pass" name="input-pass" class="newdoc__input registr__form-input" required>
+        <label class="page__data-label" for="input-pass-repeat">
+          Повторите пароль
+        </label>
+        <input type="password" id="input-pass-repeat" name="input-pass-repeat" class="newdoc__input registr__form-input" required>
+        <label class="page__data-label page__data-label--mt56" for="input-name">
+          Имя
+        </label>
+        <input type="text" id="input-name" name="input-login" class="newdoc__input" required>
+        <label class="page__data-label" for="input-surname">
+          Фамилия
+        </label>
+        <input type="text" id="input-surname" name="input-login" class="newdoc__input" required>
+        <label class="page__data-label" for="input-patronymic">
+          Отчество
+        </label>
+        <input type="text" id="input-patronymic" name="input-login" class="newdoc__input">
+        <label class="page__data-label" for="input-position">
+          Должность
+        </label>
+        <input type="text" id="input-position" name="input-login" class="newdoc__input">
+        <label class="page__data-label" for="input-mail">
+          Адрес эл. почты (личный)
+        </label>
+        <input type="email" id="input-mail" name="input-login" class="newdoc__input" required>
+        <label class="page__data-label" for="input-tel">
+          Телефон
+        </label>
+        <input type="tel" id="input-tel" name="input-login" class="newdoc__input registr__form-input" required value="+7">
+        <button class="newdoc__button newdoc__button--createdoc registr__form-button" type="submit">
+          Отправить заявку
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+@@include('./footer.html')
+</body>
+</html>

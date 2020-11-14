@@ -57,9 +57,34 @@
       <button id="login" class="header__navigation-button header__navigation-button--login">
         Войти
       </button>
-      <button class="header__navigation-button header__navigation-button--reg">
+      <div class="header__login-overlay" id="login-form">
+        <form class="header__login" action="/" method="get">
+          <div class="header__login-head">
+            <h2 class="header__login-title">
+              Войти
+            </h2>
+            <button type="button" id="login-close" class="header__login-close">
+            </button>
+          </div>
+          <label for="login-field" class="header__login-label">Имя пользователя</label>
+          <input type="email" class="header__login-input" id="login-field" name="login-field" required>
+          <label for="pass-field" class="header__login-label">Пароль</label>
+          <div class="header__login-password">
+            <input type="password" class="header__login-input" id="pass-field" name="pass-field" required>
+            <input type="checkbox" class="header__login-input-eye" id="toggle-eye">
+            <label for="toggle-eye" class="header__login-label-eye">
+            </label>
+          </div>
+          <div class="header__login-item">
+            <button type="submit" class="header__login-link header__login-link--enter">Войти на портал</button>
+            <a href="" class="header__login-link">Забыли пароль?</a>
+          </div>
+        </form>
+      </div>
+
+      <a href="registr.html" class="header__navigation-button header__navigation-button--reg">
         Зарегистрироваться
-      </button>
+      </a>
       <div class="header__user">
         <a href="" class="header__user-link">
           <span class="header__user-unread-amount-all">

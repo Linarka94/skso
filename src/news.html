@@ -13,7 +13,43 @@
 <body>
   @@include('./header.html')
   <section class="container">
-    <div class="page">
+    <div class="page page--pb24">
+      <h1 class="page__title">
+        Новости
+      </h1>
+      <form class="page__sort">
+        <div class="page__sort-item">
+          <h3 class="page__sort-title">
+            Категория новостей
+          </h3>
+          <select name="" id="" class="select2">
+            <option value="">Все категории</option>
+            <option value="">Все категории</option>
+            <option value="">Все категории</option>
+          </select>
+        </div>
+        <div class="page__sort-item">
+          <h3 class="page__sort-title">
+            Субъект РФ
+          </h3>
+          <select name="" id="" class="select2">
+            <option value="1">Все категории 1</option>
+            <option value="2">Все категории 2</option>
+            <option value="3">Все категории 3</option>
+          </select>
+        </div>
+        <div class="page__sort-item">
+          <div class="page__sort-head">
+            <h3 class="page__sort-title">
+              Дата
+            </h3>
+            <button type="reset" class="page__sort-reset">Сбросить</button>
+          </div>
+          <input type="date" class="page__sort-date">
+        </div>
+      </form>
+    </div>
+    <div class="page page--margin-top">
       <h1 class="page__title page__title--max-width">
         Врио председателя Контрольно-счетной палаты городского округа Мытищи Московской области выступил на публичных слушаниях
       </h1>
